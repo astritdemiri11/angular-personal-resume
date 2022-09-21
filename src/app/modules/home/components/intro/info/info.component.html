@@ -1,0 +1,21 @@
+<div [class.handset]="layoutService.business.isHandset()">
+  <div class="mat-display-1 margin-bottom_8p font-weight_300 font-family_secondary theme-accent_color">
+    <p translate="greeting.v1" translateFeature="home"></p>
+  </div>
+
+  <ng-container *ngIf="profile">
+    <h1 class="mat-display-4 margin-bottom_8p line-height_1 font-family_secondary text-name">
+      {{ profile.name }} <br> {{ profile.surname }}
+    </h1>
+
+    <div class="mat-display-1 margin-bottom_8p font-weight_300 font-family_secondary opacity_0_5">
+      <p [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">{{ profile.profession }}</p>
+    </div>
+  </ng-container>
+
+  <div class="margin-top_32p">
+    <a routerLink="/" fragment="contactMe" queryParamsHandling="merge" mat-raised-button
+      class="contact-btn padding-horizontal_32p padding-vertical_8p font-size_16p theme-accent_background theme-primary_color"
+      translate="hireMe" translateFeature="home"></a>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "about": "Di me",
+    "api": "API",
+    "blog": "Blog",
+    "contact": "Contatto",
+    "docs": "Documenti",
+    "home": "Casa",
+    "language": "Lingua",
+    "portfolio": "Portfolio",
+    "privacy": "Privacy",
+    "resume": "Sommario",
+    "security": "Sicurezza",
+    "terms": "Termini",
+    "training": "Addestramento"
+  },
+  "message": {
+    "websiteDescription": "Perché questo sito è speciale?"
+  },
+  "fullScreen": "A schermo intero",
+  "socialLink": "Legame sociale",
+  "theme": "Tema"
+}

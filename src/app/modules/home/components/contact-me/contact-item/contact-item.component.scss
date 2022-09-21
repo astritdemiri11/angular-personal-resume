@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-icon-container {
+  border-radius: 50px;
+  height: 50px;
+  transition: border 300ms ease-in-out;
+}
+
+.contact-icon {
+  min-width: 50px;
+  max-width: 50px;
+  width: 50px;
+  height: 50px;
+}

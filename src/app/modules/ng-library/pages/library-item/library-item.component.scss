@@ -1,0 +1,100 @@
+.ng-library-container {
+  min-height: calc(100vh - 80px);
+}
+
+.ng-library-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 16px;
+}
+
+.ng-library-maintenance-text::before {
+  content: '\26A0';
+  margin-right: 8px;
+}
+
+.ng-library-link-text {
+  color: inherit;
+}
+
+.ng-library-link-text::after {
+  content: '\27A2';
+}
+
+.flex-fill {
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.flex {
+  flex: 1 1 1e-9px;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.flex-row.flex-gap-8p > :not(:last-child) {
+  margin-right: 8px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.flex-column.flex-gap-8p > :not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.flex-main-center {
+  justify-content: center;
+}
+
+.flex-cross-center {
+  align-items: center;
+}
+
+.position_absolute {
+  position: absolute;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.left_0 {
+  left: 0;
+}
+
+.right_0 {
+  right: 0;
+}
+
+.z-index_1 {
+  z-index: 1;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.font-size_32p {
+  font-size: 32px;
+}
+
+.border-1 {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-2 {
+  border-width: 2px;
+  border-style: solid;
+}

@@ -1,0 +1,44 @@
+<mat-toolbar fxLayout fxLayoutAlign="center" color="primary" class="header-toolbar theme-primary_background">
+  <div fxFlex fxLayout fxLayoutAlign="space-between center" serverSide ssStyle="zIndex: -1"
+    class="width_100 container-max-width fadeInDown"
+    [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+    <a (click)="onLogoClick($event)" href="#" aria-label="Logo" class="logo-link">
+      <mat-icon svgIcon="logo" color="accent" class="logo"></mat-icon>
+    </a>
+
+    <app-header-menu-outlet *ngIf="!layoutService.business.isHandset()"></app-header-menu-outlet>
+
+    <div fxLayout fxLayoutGap="64px">
+      <ng-container *ngIf="!layoutService.business.isHandset()">
+        <ng-container *ngIf="menuService.model.phoneNumber$ | async as phone">
+          <div fxLayout fxLayoutAlign="space-between center" fxLayoutGap="16px"
+            class="phone position_relative padding-left_32p margin-left_16p">
+            <div class="phone-divider position_absolute height_16p left_0 theme-primary_background_100"></div>
+            <mat-icon class="dimension-16p">phone</mat-icon>
+
+            <a [href]="'tel:' + menuService.business.getPhone(true)" target="_blank"
+              class="phone-link mat-subheading-1 margin_0 theme-accent_color">{{ phone }}</a>
+          </div>
+        </ng-container>
+      </ng-container>
+
+      <div fxLayout fxLayoutGap="8px">
+        <a mat-icon-button [matTooltip]="'message.websiteDescription' | translate:'core'"
+          aria-label="Why this website is special" [routerLink]="['/why-this-website-is-special']" preserveFragment
+          queryParamsHandling="merge">
+          <mat-icon routerLinkActive="theme-accent_color">tips_and_updates</mat-icon>
+        </a>
+
+        <button *ngIf="layoutService.business.isHandset()" type="button" aria-label="Toggle sidenav" mat-icon-button
+          (click)="onMenuClick()" class="dimension-32p">
+          <mat-icon aria-label="Side nav toggle icon" class="dimension-32p">menu</mat-icon>
+        </button>
+
+        <button *ngIf="!layoutService.business.isHandset()" type="button" aria-label="Toggle sidenav" mat-icon-button
+          (click)="onSettingsClick()">
+          <mat-icon aria-label="Side nav toggle icon" [class.theme-accent_color]="settingsOpened">settings</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

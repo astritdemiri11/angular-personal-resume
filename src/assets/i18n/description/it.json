@@ -1,0 +1,8 @@
+{
+  "menu": {
+    "home": "Home",
+    "blog": "Blog",
+    "ng-library": "Ng Library",
+    "node-project": "Node Project"
+  }
+}

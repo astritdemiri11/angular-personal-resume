@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-top_128p" [class.handset]="layoutService.business.isHandset()">
+  <app-section-header appDisplayMode="fadeInTop" class="display_block opacity_0" label="mySkills"></app-section-header>
+
+  <div appDisplayMode="fadeInTop" fxLayout fxLayoutAlign="center" class="opacity_0">
+    <div fxFlex class="width_100 container-max-width"
+      [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+
+      <div fxLayout="column" fxLayoutGap="16px">
+        <div class="mat-display-1 font-family_secondary">
+          <p translate="header.skills" translateFeature="home"></p>
+        </div>
+
+        <div [fxLayout]="layoutService.business.isHandset() ? 'column' : 'row wrap'">
+          <div fxFlex="50" *ngFor="let skill of skills" class="skill-item">
+            <app-skill-item [item]="skill" class="display_block"></app-skill-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

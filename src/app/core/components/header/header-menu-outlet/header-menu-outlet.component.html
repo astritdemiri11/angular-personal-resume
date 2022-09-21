@@ -1,0 +1,10 @@
+<div fxLayout fxLayoutAlign="space-between center">
+  <mat-nav-list fxFlex [fxLayout]="layoutService.business.isHandset() ? 'column' : 'row'" class="padding-top_0">
+    <a *ngFor="let menu of menus" [routerLink]="menu.routerLink" [fragment]="menu.fragment" queryParamsHandling="merge"
+      (click)="onMenuClick(menu.fragment)" mat-list-item>
+      <span [translate]="menu.translation" [translateFeature]="menu.feature"
+        class="menu-link mat-subheading-1 margin_0 text-transform_uppercase"
+        [class.theme-accent_color]="isActive(menu.fragment)"></span>
+    </a>
+  </mat-nav-list>
+</div>

@@ -1,0 +1,30 @@
+.project {
+  transition: opacity 300ms ease-in-out;
+}
+
+.project-backdrop {
+  transition: opacity 300ms ease-in-out;
+}
+
+.project-button {
+  margin-top: -20px;
+}
+
+.project-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: background-size 300ms ease-in-out;
+}
+
+.project-container:hover .project-backdrop {
+  opacity: 0.65;
+}
+
+.project-container:hover .project {
+  opacity: 1;
+}
+
+.project-container:hover .project-image {
+  background-size: 110%;
+}

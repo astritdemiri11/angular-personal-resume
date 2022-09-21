@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome debug",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome 10.0.0.61 debug",
+      "url": "http://10.0.0.61:4200",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome 192.168.1.42 debug",
+      "url": "http://192.168.1.42:4200",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

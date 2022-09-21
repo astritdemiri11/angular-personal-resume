@@ -1,0 +1,29 @@
+{
+  "e": [{
+    "id": 1,
+    "t": "Universiteti i Tiranes",
+    "u": "Inxhinieri Matematike dhe Informatike - Master Shkencor",
+    "d": "Një avancim i bachelorit në Matematikën e Aplikuar. Një degë e njohurive që jep informacion të avancuar rreth teorisë, eksperimentimit dhe inxhinierisë që formojnë bazën për projektimin dhe përdorimin e kompjuterëve të kombinuar me njohuritë rreth ekuacioneve diferenciale, teorisë së përafrimit të analizës reale dhe komplekse, si dhe algjebrës lineare dhe probabilitetit të aplikuar. Ky kombinim jep një përvojë të madhe në fusha si mësimdhënia e matematikës, statistikat, programimi, pajisjet kompjuterike."
+  }, {
+    "id": 2,
+    "t": "Universiteti i Tiranes",
+    "u": "Inxhinieri Matematike dhe Informatike",
+    "d": "Kjo fushë studimi është pjesë e departamentit të matematikës së aplikuar. Një degë e njohurive që jep informacion të avancuar rreth teorisë, eksperimentimit dhe inxhinierisë që formojnë bazën për projektimin dhe përdorimin e kompjuterëve të kombinuar me njohuritë rreth ekuacioneve diferenciale, teorisë së përafrimit të analizës reale dhe komplekse, si dhe algjebrës lineare dhe probabilitetit të aplikuar. Ky kombinim jep një përvojë të madhe në fusha si mësimdhënia e matematikës, statistikat, programimi, pajisjet kompjuterike."
+  }],
+  "x": [{
+    "id": 1,
+    "t": "Zhvillues Fullstack",
+    "u": "BlackSoft",
+    "d": "Bashkëpunëtor në projektin e parë të kompanisë. Përgjegjësia ime kryesore është të krijoj një aplikacion bastesh sportive duke përfshirë veçoritë e nevojshme dhe më shumë. Unë jam përgjegjës për ruajtjen, sigurimin dhe ndarjen e kodit burimor në mënyrën më të lehtë për ekipin tim. Unë jam gjithashtu përgjegjës për lëshimin ose publikimin e aplikacionit, kontrollimin e mbingarkesës së rrjetit, injektimeve të përdoruesve dhe konsumit të padobishëm të të dhënave."
+  }, {
+    "id": 2,
+    "t": "Zhvillues Uebi",
+    "u": "Morix",
+    "d": "Një kompani filloi në vitin 2012 si një kompani e zhvillimit të softuerit e specializuar në zhvillimin e aplikacioneve të softuerit të teknologjisë së lartë. Përgjegjësitë e mia kryesore janë të krijoj, mirëmbaj ose përditësoj një aplikacion ekzistues. Më duhet të kryej detyrat e dhëna në fillim të ditës dhe të përmbledh rezultatet në fund të ditës. Unë jam i fokusuar kryesisht në funksionalitetin e aplikacionit në krahasim me pamjen e tij. Gjithashtu unë jam përgjegjës për lëshimin ose publikimin e aplikacionit, kontrollin e mbingarkesës së rrjetit, injektimeve të përdoruesve dhe konsumit të padobishëm të të dhënave."
+  }, {
+    "id": 3,
+    "t": "Vezhgues, Zhvillues Uebi",
+    "u": "EESTEC LC Tirana",
+    "d": "Shoqata Evropiane e Studentëve të Inxhinierisë Elektrike është një organizatë jopolitike, joqeveritare dhe jofitimprurëse e cila synon dhe trajnon përmes aktiviteteve të saj studentë nga universitetet, institutet dhe shkollat teknike të profilit elektrik në Evropë. Let's Be Humans është një nismë e kësaj organizate. Përgjegjësia ime është të krijoj dhe mirëmbaj faqen zyrtare të Let's Be Human Albania ku përdoruesit do të jenë në gjendje të identifikohen, kontrollojnë dhe ndihmojnë me gjithçka që munden për të ndihmuar njerëzit në nevojë."
+  }]
+}

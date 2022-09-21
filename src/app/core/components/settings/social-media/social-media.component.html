@@ -1,0 +1,22 @@
+<div fxFlexFill fxLayout fxLayoutAlign="space-between center" fxLayoutGap="8px">
+  <div>
+    <span translate="socialLink" translateFeature="core"></span>:
+  </div>
+
+  <mat-radio-group [value]="appMode" fxLayout fxLayoutGap="32px" (change)="onSetLinkMode($event)" name="socialMediaLink"
+    aria-label="Select link mode" color="accent">
+    <mat-radio-button [value]="false">
+      <div fxLayout fxLayoutAlign="start center" fxLayoutGap="4px">
+        <mat-icon>link</mat-icon>
+        <span>URL</span>
+      </div>
+    </mat-radio-button>
+
+    <mat-radio-button [value]="true">
+      <div fxLayout fxLayoutAlign="start center" fxLayoutGap="4px">
+        <mat-icon>smartphone</mat-icon>
+        <span>App</span>
+      </div>
+    </mat-radio-button>
+  </mat-radio-group>
+</div>

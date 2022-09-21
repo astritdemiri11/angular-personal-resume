@@ -1,0 +1,100 @@
+<ng-container *ngIf="profile">
+  <div fxFlexFill fxLayout="column" fxLayoutAlign="space-around left" fxLayoutGap="16px">
+    <div>
+      <div class="mat-display-1 margin-bottom_16p font-family_secondary">
+        <p>
+          <span translate="greeting.v2" translateFeature="home"></span><span>&nbsp;</span>
+          <span itemprop="givenName">{{ profile.name }}</span><span>&nbsp;</span><span itemprop="familyName">
+            {{ profile.surname }}</span>
+        </p>
+      </div>
+
+      <div fxLayout fxLayoutGap="8px" class="mat-headline margin-bottom_16p font-weight_300 font-family_secondary">
+        <p fxFlex itemprop="jobTitle" [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }"
+          class="theme-accent_color">
+          {{ profile.profession }}
+        </p>
+
+        <button aria-label="Read text" (click)="textRead.start()" mat-icon-button
+          *ngIf="!textRead.reading; else stopReadingBtn">
+          <mat-icon color="accent" class="read-icon">edit_note</mat-icon>
+        </button>
+
+        <ng-template #stopReadingBtn>
+          <button aria-label="Stop read text" (click)="textRead.reveal()" mat-icon-button>
+            <mat-icon color="accent" class="read-icon">front_hand</mat-icon>
+          </button>
+        </ng-template>
+      </div>
+
+      <div
+        class="mat-subheading-2 position_relative margin-bottom_16p font-weight_300 font-family_secondary opacity_0_65">
+        <text-read #textRead [relativeTo]="textContainer" [speed]="12000" [rowHeight]="28"
+          overlayClass="theme-primary_background" cursorClass="theme-accent_background"></text-read>
+        <p #textContainer [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">{{ profile.bio }}</p>
+      </div>
+
+      <mat-list class="padding-top_0 opacity_0_65">
+        <mat-list-item class="font-family_secondary">
+          <span class="key" translate="birthday" translateFeature="home"></span> :
+          <a itemprop="birthDate" href="https://en.wikipedia.org/wiki/Gemini_(astrology)" target="_blank"
+            class="margin-left_8p theme-accent_color">
+            {{ profile.birthday | customDate:'longDate' }}</a>
+        </mat-list-item>
+
+        <ng-container *ngIf="contact">
+          <mat-list-item *ngIf="contact.phones.length > 0" class="font-family_secondary">
+            <span class="key" translate="phone" translateFeature="home"></span> :
+            <a itemprop="telephone" [href]="'tel:' + getPhone()" target="_blank" [attr.content]="getPhone()"
+              class="margin-left_8p theme-accent_color">
+              {{ contact.phones[0] }}</a>
+          </mat-list-item>
+
+          <mat-list-item *ngIf="contact.phones.length > 0" class="font-family_secondary">
+            <span class="key" translate="email" translateFeature="home"></span> :
+            <a itemprop="email" [href]="'mailto:' + contact.emails[0]" target="_blank"
+              class="margin-left_8p theme-accent_color">
+              {{ contact.emails[0] }}</a>
+          </mat-list-item>
+
+          <mat-list-item *ngIf="contact.phones.length > 0" class="font-family_secondary">
+            <span class="key" translate="address" translateFeature="home"></span> :
+            <a itemprop="address" [href]="'http://maps.google.com/?q=' + contact.addresses[0]" target="_blank"
+              class="margin-left_8p theme-accent_color">
+              {{ contact.addresses[0] }}
+            </a>
+          </mat-list-item>
+        </ng-container>
+
+        <mat-list-item *ngIf="profile.languages" class="font-family_secondary">
+          <span class="key" translate="language" translateFeature="home"></span> :
+          <div itemprop="knowsLanguage" [attr.content]="profile.languages.join(', ')" fxLayout fxLayoutGap="8px"
+            [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }" class="value margin-left_8p">
+            <text-display fxFlexFill>
+              <span text>
+                <span *ngFor="let languageCode of profile.languages" class="language-name">
+                  <ng-container *ngIf="languages[languageCode] as language">
+                    <span>{{ language.name }}</span>
+                  </ng-container>
+                </span>
+              </span>
+            </text-display>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item class="font-family_secondary">
+          <span class="key" translate="freelance" translateFeature="home"></span> :
+          <span class="margin-left_8p" translate="available" translateFeature="home"></span>
+        </mat-list-item>
+      </mat-list>
+    </div>
+
+    <div>
+      <form action="/download-cv" method="GET">
+        <button translate="downloadCV" translateFeature="home" mat-raised-button
+          class="theme-accent_background theme-primary_color"></button>
+      </form>
+    </div>
+  </div>
+
+</ng-container>

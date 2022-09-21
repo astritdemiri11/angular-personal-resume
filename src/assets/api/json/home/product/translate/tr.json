@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "t": "Ön Uç Geliştirme",
+    "d": "Angular, React, jQuery ve klasik Vanilla Js gibi yeni ön uç çerçeveleri ve kitaplıklarıyla uygulamalar geliştirmek."
+  },
+  {
+    "id": 2,
+    "t": "UI/UX Tasarımı",
+    "d": "Materyal Tasarımı ve HTML/Jade yapılandırmasının ve CSS/SCSS/SASS stilinin gücüyle kolay tasarım modern uygulamalar."
+  },
+  {
+    "id": 3,
+    "t": "Proje Yapısı",
+    "d": "Durum yönetimi, MVC modeli, mevcut API'ler ve kaynak kontrol yönetimi yardımıyla ekip arasında projeleri yapılandırma, güvenceye alma ve kolay bakım."
+  },
+  {
+    "id": 4,
+    "t": "Mobil uygulama",
+    "d": "NativeScript yardımıyla web uygulamalarını Android, iOS ve hatta Evrensel Windows Platformu uygulamalarına dönüştürmek."
+  },
+  {
+    "id": 5,
+    "t": "Sorumlu tasarım",
+    "d": "Medya Sorguları ve Malzeme Düzeni ve Flex ve Grid tasarımı gibi en yeni teknolojilerin yardımıyla mobil ilk tasarım kolay yapılır."
+  },
+  {
+    "id": 6,
+    "t": "Video düzenleme",
+    "d": "Web geliştirme için yararlı bir aksesuar, Adobe Premiere Pro'nun yardımıyla videolar oluşturup düzenleyerek ürünü sunma yeteneğimdir."
+  }
+]

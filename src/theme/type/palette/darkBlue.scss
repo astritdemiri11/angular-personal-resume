@@ -1,0 +1,32 @@
+$palette: (
+ 50: 	hsl(226, 33%, 73%),
+ 100: hsl(226, 33%, 63%),
+ 200: hsl(226, 33%, 53%),
+ 300: hsl(226, 33%, 43%),
+ 400: hsl(226, 33%, 33%),
+ 500: hsl(226, 33%, 23%),
+ 600: hsl(226, 33%, 20%),
+ 700: hsl(226, 33%, 17%),
+ 800: hsl(226, 33%, 14%),
+ 900: hsl(226, 33%, 11%),
+ A100: #FFFFFF,
+ A200: #FFFFFF,
+ A400: hsl(226, 33%, 73%),
+ A700: hsl(226, 33%, 63%),
+ contrast: (
+  50: rgba(black, 0.87),
+  100: rgba(black, 0.87),
+  200: rgba(black, 0.87),
+  300: rgba(white, 0.87),
+  400: rgba(white, 0.65),
+  500: rgba(white, 0.65),
+  600: rgba(white, 0.65),
+  700: rgba(white, 0.65),
+  800: rgba(white, 0.65),
+  900: rgba(white, 0.65),
+  A100: rgba(white, 0.65),
+  A200: rgba(white, 0.65),
+  A400: rgba(white, 0.65),
+  A700: rgba(white, 0.65)
+ )
+);

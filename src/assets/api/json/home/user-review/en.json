@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "f": "Reixhons Gjoni",
+    "p": "UI/UX Designer",
+    "i": "/assets/images/webp/user-review/reixhons-gjoni.webp",
+    "l": "",
+    "d": "He can always translate my design into code without requiring me to make changes. He has a very amazing understanding of my design prototype even when I don't include every detail as I should which helps the project develop faster."
+  },
+  {
+    "id": 2,
+    "f": "Evis Kraja",
+    "p": "Frontend Developer",
+    "i": "/assets/images/webp/user-review/evis-kraja.webp",
+    "l": "",
+    "d": "Shares positive thoughts and ideas on issues, and this helps others to have a positive outlook about their jobs."
+  },
+  {
+    "id": 3,
+    "f": "Redi Zogolli",
+    "p": "Backend Developer",
+    "i": "/assets/images/webp/user-review/redi-zogolli.webp",
+    "l": "",
+    "d": "Possesses the ability to challenge common problems by creating new and innovative solutions."
+  },
+  {
+    "id": 4,
+    "f": "Kevin Karafili",
+    "p": "Database Master",
+    "i": "/assets/images/webp/user-review/kevin-karafili.webp",
+    "l": "",
+    "d": "Helps the team to keep engaged and focused."
+  }
+]

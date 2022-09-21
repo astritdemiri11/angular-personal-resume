@@ -1,0 +1,14 @@
+<div fxFlexFill fxLayout="column" [fxLayoutAlign]="layoutService.business.isHandset() ? 'center center' : 'start'">
+  <div fxLayout fxLayoutAlign="start center" fxLayoutGap="8px" class="margin_8p">
+    <mat-icon svgIcon="copyright" class="copyright-icon"></mat-icon>
+    <p>© {{ now | date:'y' }} Astrit Demiri</p>
+  </div>
+
+  <div>
+    <img *ngIf="isDarkTheme(); else blackSignature" alt="Signature" src="/assets/images/webp/signature/signature_white.webp" class="signature" />
+
+      <ng-template #blackSignature>
+        <img alt="Signature" src="/assets/images/webp/signature/signature_black.webp" class="signature" />
+      </ng-template>
+  </div>
+</div>

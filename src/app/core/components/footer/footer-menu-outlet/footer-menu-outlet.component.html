@@ -1,0 +1,27 @@
+<div fxFlexFill>
+  <div fxLayout fxLayoutAlign="space-between" fxLayoutGap="8px" class="margin-left_16p">
+    <div>
+      <mat-nav-list fxFlex class="padding-top_0">
+        <a mat-list-item [routerLink]="['/']">
+          <span class="mat-caption" translate="menu.home" translateFeature="core"></span>
+        </a>
+
+        <a mat-list-item [routerLink]="['/blog']">
+          <span class="mat-caption" translate="menu.blog" translateFeature="core"></span>
+        </a>
+      </mat-nav-list>
+    </div>
+
+    <div>
+      <mat-nav-list fxFlex class="padding-top_0">
+        <a mat-list-item [routerLink]="['/ng-library']">
+          <span class="mat-caption">Ng Library</span>
+        </a>
+
+        <a mat-list-item [routerLink]="['/node-project']">
+          <span class="mat-caption">Node Project</span>
+        </a>
+      </mat-nav-list>
+    </div>
+  </div>
+</div>

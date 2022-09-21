@@ -1,0 +1,24 @@
+.sidenav-project {
+  width: 70%;
+}
+
+.project-list-btn {
+  z-index: 5;
+  bottom: 80px;
+  left: 16px;
+}
+
+.project-carousel-navigation {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.project-carousel-container {
+  height: 240px;
+}
+
+.project-carousel-mobile {
+  margin-top: 56px;
+  height: calc(100vh - 300px);
+  width: 100%;
+}

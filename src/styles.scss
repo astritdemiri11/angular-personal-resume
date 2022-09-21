@@ -1,0 +1,115 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+// @use "./theme/color" as colors;
+
+@use "./theme/type/darkBlue_blue" as theme-darkBlue_blue;
+@use "./theme/type/darkGrey_cyan" as theme-darkGrey_cyan;
+@use "./theme/type/lightPink_lightBlue" as theme-lightPink_lightBlue;
+@use "./theme/type/lightYellow_purple" as theme-lightYellow_purple;
+
+// @include mat.core();
+
+$primary: map.get(theme-darkBlue_blue.$theme, primary);
+$accent: map.get(theme-darkBlue_blue.$theme, accent);
+
+.theme-darkBlue_blue.default_value {
+  background-color: mat.get-color-from-palette($primary);
+  border-color: mat.get-color-from-palette($accent);
+}
+
+.theme-darkBlue_blue ::-webkit-scrollbar-thumb:hover {
+  background: mat.get-color-from-palette($accent, lighter);
+}
+
+.theme-darkBlue_blue ::-webkit-scrollbar-track-piece {
+  background: mat.get-color-from-palette($primary, 100);
+}
+
+.theme-darkBlue_blue ::-webkit-scrollbar-thumb {
+  background: mat.get-color-from-palette($accent);
+}
+
+$primary: map.get(theme-darkGrey_cyan.$theme, primary);
+$accent: map.get(theme-darkGrey_cyan.$theme, accent);
+
+.theme-darkGrey_cyan.default_value {
+  background-color: mat.get-color-from-palette($primary);
+  border-color: mat.get-color-from-palette($accent);
+}
+
+.theme-darkGrey_cyan ::-webkit-scrollbar-thumb:hover {
+  background: mat.get-color-from-palette($accent, lighter);
+}
+
+.theme-darkGrey_cyan ::-webkit-scrollbar-track-piece {
+  background: mat.get-color-from-palette($primary, 100);
+}
+
+.theme-darkGrey_cyan ::-webkit-scrollbar-thumb {
+  background: mat.get-color-from-palette($accent);
+}
+
+$primary: map.get(theme-lightPink_lightBlue.$theme, primary);
+$accent: map.get(theme-lightPink_lightBlue.$theme, accent);
+
+.theme-lightPink_lightBlue.default_value {
+  background-color: mat.get-color-from-palette($primary);
+  border-color: mat.get-color-from-palette($accent);
+}
+
+.theme-lightPink_lightBlue ::-webkit-scrollbar-thumb:hover {
+  background: mat.get-color-from-palette($accent, lighter);
+}
+
+.theme-lightPink_lightBlue ::-webkit-scrollbar-track-piece {
+  background: mat.get-color-from-palette($primary, 100);
+}
+
+.theme-lightPink_lightBlue ::-webkit-scrollbar-thumb {
+  background: mat.get-color-from-palette($accent);
+}
+
+$primary: map.get(theme-lightYellow_purple.$theme, primary);
+$accent: map.get(theme-lightYellow_purple.$theme, accent);
+
+.theme-lightYellow_purple.default_value {
+  background-color: mat.get-color-from-palette($primary);
+  border-color: mat.get-color-from-palette($accent);
+}
+
+.theme-lightYellow_purple ::-webkit-scrollbar-thumb:hover {
+  background: mat.get-color-from-palette($accent, lighter);
+}
+
+.theme-lightYellow_purple ::-webkit-scrollbar-track-piece {
+  background: mat.get-color-from-palette($primary, 100);
+}
+
+.theme-lightYellow_purple ::-webkit-scrollbar-thumb {
+  background: mat.get-color-from-palette($accent);
+}
+
+// .theme-darkBlue_blue {
+//   @include mat.all-component-themes(theme-darkBlue_blue.$theme);
+//   @include colors.universal-colors(theme-darkBlue_blue.$theme);
+// }
+
+// .theme-darkGrey_cyan {
+//   @include mat.all-component-themes(theme-darkGrey_cyan.$theme);
+//   @include colors.universal-colors(theme-darkGrey_cyan.$theme);
+// }
+
+// .theme-lightPink_lightBlue {
+//   @include mat.all-component-themes(theme-lightPink_lightBlue.$theme);
+//   @include colors.universal-colors(theme-lightPink_lightBlue.$theme);
+// }
+
+// .theme-lightYellow_purple {
+//   @include mat.all-component-themes(theme-lightYellow_purple.$theme);
+//   @include colors.universal-colors(theme-lightYellow_purple.$theme);
+// }
+
+@import "./theme/maintain";
+@import "./theme/animation";
+@import "./theme/class";

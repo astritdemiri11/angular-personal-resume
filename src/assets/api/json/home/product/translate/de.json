@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "t": "Frontend-Entwicklung",
+    "d": "Anwendungen entwickeln mit den neuen Frontend-Frameworks und Bibliotheken wie Angular, React, jQuery und den Klassikern VanillaJs."
+  },
+  {
+    "id": 2,
+    "t": "UI/UX Design",
+    "d": "Einfaches Entwerfen moderner Anwendungen mit Hilfe von Material Design und der Leistungsfähigkeit von HTML/Jade-Strukturierung und CSS/SCSS/SASS-Styling."
+  },
+  {
+    "id": 3,
+    "t": "Projektstruktur",
+    "d": "Projekte im Team mit Hilfe von State Management, MVC Pattern, verfügbaren APIs und Source Control Management strukturieren, sichern und einfach warten."
+  },
+  {
+    "id": 4,
+    "t": "Mobile Applikation",
+    "d": "Konvertieren von Webanwendungen in Android-, iOS- und sogar Anwendungen der universellen Windows-Plattform mit Hilfe von NativeScript."
+  },
+  {
+    "id": 5,
+    "t": "Sich anpassendes Design",
+    "d": "Mobile First Design einfach gemacht mit Hilfe von Media Queries und Material Layout und neusten Technologien wie Flex und Grid Design."
+  },
+  {
+    "id": 6,
+    "t": "Videobearbeitung",
+    "d": "Ein hilfreiches Zubehör für die Webentwicklung ist meine Möglichkeit, das Produkt zu präsentieren, indem ich Videos mit Hilfe von Adobe Premiere Pro erstelle und bearbeite."
+  }
+]

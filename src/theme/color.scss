@@ -1,0 +1,91 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin universal-colors($theme) {
+  $primary: map.get($theme, primary);
+  $accent: map.get($theme, accent);
+  $warn: map.get($theme, warn);
+  $foreground: map.get($theme, foreground);
+  $background: map.get($theme, background);
+
+  /*Primary*/
+
+  //Background
+  .theme-primary_background {
+    background-color: mat.get-color-from-palette($primary);
+  }
+
+  .theme-primary_background_100 {
+    background-color: mat.get-color-from-palette($primary, 100);
+  }
+
+  .theme-primary_background_200 {
+    background-color: mat.get-color-from-palette($primary, 200);
+  }
+
+  .theme-primary_background_300 {
+    background-color: mat.get-color-from-palette($primary, 300);
+  }
+
+  .theme-primary_background_400 {
+    background-color: mat.get-color-from-palette($primary, 400);
+  }
+
+  //Border
+  .theme-primary_border {
+    border-color: mat.get-color-from-palette($primary);
+  }
+
+  .theme-primary_border_200 {
+    border-color: mat.get-color-from-palette($primary, 200) !important;
+  }
+
+  //Color
+  .theme-primary_color {
+    color: mat.get-color-from-palette($primary);
+  }
+
+  .theme-primary_color_300 {
+    color: mat.get-color-from-palette($primary, 300);
+  }
+
+  /*Accent*/
+
+  //Background
+  .theme-accent_background {
+    background-color: mat.get-color-from-palette($accent);
+  }
+
+  //Color
+  .theme-accent_color {
+    color: mat.get-color-from-palette($accent);
+    fill: mat.get-color-from-palette($accent);
+  }
+
+  //Border
+  .theme-accent_border {
+    border-color: mat.get-color-from-palette($accent) !important;
+  }
+
+  .theme-accent_border_200 {
+    border-color: mat.get-color-from-palette($accent, 200) !important;
+  }
+
+    /*Warn*/
+
+  //Background
+  .theme-warn_background_50 {
+    background-color: mat.get-color-from-palette($warn, 50);
+  }
+
+  //Color
+  .theme-warn_color {
+    color: mat.get-color-from-palette($warn);
+    fill: mat.get-color-from-palette($warn);
+  }
+
+  //Border
+  .theme-warn_border {
+    border-color: mat.get-color-from-palette($warn) !important;
+  }
+}

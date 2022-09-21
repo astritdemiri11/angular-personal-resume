@@ -1,0 +1,44 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenavMenu fixedInViewport [attr.role]="getSidenavRole()" [mode]="getSidenavMode()"
+    [opened]="isSidenavOpened()" [position]="layoutService.business.isHandset() ? 'end' : 'start'"
+    class="sidenav-menu theme-primary_background">
+    <div *ngIf="layoutService.business.isHandset()" fxFlexFill fxLayout="column">
+      <mat-toolbar class="header-toolbar theme-primary_background">
+        <a (click)="onLogoClick($event)" href="#" aria-label="Logo" class="logo-link">
+          <mat-icon svgIcon="logo" color="accent" class="logo"></mat-icon>
+        </a>
+      </mat-toolbar>
+
+      <app-header-menu-outlet (menuClick)="sidenavMenu.close()" fxFlex></app-header-menu-outlet>
+
+      <app-copyright></app-copyright>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav #sidenavSettings fixedInViewport [attr.role]="getSidenavRole()" [mode]="getSidenavMode()"
+    [opened]="isSidenavOpened()" [position]="layoutService.business.isHandset() ? 'start' : 'end'"
+    class="sidenav-settings theme-primary_background">
+    <div *ngIf="!layoutService.business.isHandset()" fxFlexFill fxLayout="column" fxLayoutGap="8px">
+      <mat-toolbar (click)="sidenavSettings.close()" class="header-toolbar theme-primary_background cursor_pointer">
+        <app-settings-header></app-settings-header>
+      </mat-toolbar>
+
+      <div fxFlex class="padding-horizontal_16p">
+        <app-settings></app-settings>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header class="header display_block width_100" (menuClick)="sidenavMenu.toggle()"
+      (settingsClick)="sidenavSettings.toggle()"></app-header>
+    <div class="divider theme-primary_background"></div>
+
+    <main itemscope itemtype="https://schema.org/Person" class="theme-primary_background">
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </main>
+
+    <app-bottom-sheet *ngIf="layoutService.business.isHandset()"></app-bottom-sheet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

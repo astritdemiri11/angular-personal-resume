@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "c": "Astrit Demiri",
+    "d": "2022-09-07T00:00:00.000Z",
+    "i": "/assets/images/webp/blog/vs-code-angular-extensions.webp",
+    "l": "/blog/vs-code-angular-extensions",
+    "n": "vs-code-angular-extensions",
+    "b": "Shtesat me te perdorura ne Visual Studio Code per zhvilluesit Angular."
+  },
+  {
+    "id": 2,
+    "c": "Astrit Demiri",
+    "d": "2022-09-10T00:00:00.000Z",
+    "i": "/assets/images/webp/blog/docker-beginner-tips.webp",
+    "l": "/blog/docker-beginner-tips",
+    "n": "docker-beginner-tips",
+    "b": "I ri ne Docker? Lexo shenimet fillestare per Docker."
+  },
+  {
+    "id": 3,
+    "c": "Astrit Demiri",
+    "d": "2022-09-12T00:00:00.000Z",
+    "i": "/assets/images/webp/blog/asp-net-signalr.webp",
+    "l": "/blog/asp-net-signalr",
+    "n": "asp-net-signalr",
+    "b": "Cfare eshte ASP.NET SignalR?"
+  },
+  {
+    "id": 4,
+    "c": "Astrit Demiri",
+    "d": "2020-09-14T00:00:00.000Z",
+    "i": "/assets/images/webp/blog/linux-commands.webp",
+    "l": "/blog/linux-commands",
+    "n": "linux-commands",
+    "b": "Komandat fillestare per Linux qe cdo perdorues duhet te dije"
+  }
+]

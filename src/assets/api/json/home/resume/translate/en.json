@@ -1,0 +1,29 @@
+{
+  "e": [{
+    "id": 1,
+    "t": "University of Tirana",
+    "u": "Math & Computer Engineering - Scientific Master",
+    "d": "An advance of the bachelor in the Applied Math. A branch of knowledge that gives advanced information about theory, experimentation, and engineering that form the basis for the design and use of computers combined with knowledge about differential equations, real and complex analysis approximation theory as well as linear algebra and applied probability. This combination gives a great experience in field like Math Teaching, Statistics, Programming, Computer Hardware."
+  }, {
+    "id": 2,
+    "t": "University of Tirana",
+    "u": "Math and Computer Engineering",
+    "d": "This field of study is part of the Applied Math department. A branch of knowledge that gives advanced information about theory, experimentation, and engineering that form the basis for the design and use of computers combined with knowledge about differential equations, real and complex analysis approximation theory as well as linear algebra and applied probability. This combination gives a great experience in field like Math Teaching, Statistics, Programming, Computer Hardware."
+  }],
+  "x": [{
+    "id": 1,
+    "t": "Full Stack Developer",
+    "u": "BlackSoft",
+    "d": "Collaborator in the 1st project of the company. My main responsibility is to create a sport betting application including the necessary features and more. I am responsible for maintaining, securing, and sharing the source code in the easiest way for my team. I also am responsible at releasing or publishing the application, checking for network overloading, users injections and useless data consumption."
+  }, {
+    "id": 2,
+    "t": "Web Developer",
+    "u": "Morix",
+    "d": "A company started in 2012 as a software development company specialized in high technology software application development. My main responsibilities are to create, maintain or update an existing application. I have to accomplish the tasks given at the start of the day and to summarize the results at the end of the day. I am mostly focused at the application functionality compared to it's appearance. Also I am responsible at releasing or publishing the application, checking for network overloading, users injections and useless data consumption."
+  }, {
+    "id": 3,
+    "t": "Observer, Web Developer",
+    "u": "EESTEC LC Tirana",
+    "d": "Electrical Engineering Students' European Association is an apolitical, non-governmental and non-profit organization which targets and trains through its activities students from electrical profile Universities, Institutes and Technical Schools in Europe.Let's Be Humans is an initiative of this organization. My responsibility is to create and maintain the Let's Be Human Albania official website where users will be able to login, check and help with everything they can in order to help the people in need."
+  }]
+}

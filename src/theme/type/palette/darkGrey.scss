@@ -1,0 +1,32 @@
+$palette: (
+ 50: #fff,
+ 100: #3f4551,
+ 200: #2C313D,
+ 300: #101624,
+ 400: #0A101E,
+ 500: #070D1B,
+ 600: #060B18,
+ 700: #050914,
+ 800: #040710,
+ 900: #020308,
+ A100: #4E4EFF,
+ A200: #1B1BFF,
+ A400: #0000E7,
+ A700: #0000CE,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(white, 0.87),
+   400: rgba(white, 0.65),
+   500: rgba(white, 0.65),
+   600: rgba(white, 0.65),
+   700: rgba(white, 0.65),
+   800: rgba(white, 0.65),
+   900: rgba(white, 0.65),
+   A100: rgba(white, 0.65),
+   A200: rgba(white, 0.65),
+   A400: rgba(white, 0.65),
+   A700: rgba(white, 0.65)
+ )
+);

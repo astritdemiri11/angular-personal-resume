@@ -1,0 +1,18 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-top_128p padding-bottom_32p">
+  <app-section-header appDisplayMode="fadeInTop" class="header display_block opacity_0" label="portfolio">
+  </app-section-header>
+
+  <div appDisplayMode="fadeInTop" fxLayout fxLayoutAlign="center" class="opacity_0">
+    <div class="width_100 container-max-width" [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <div fxFlex [fxLayout]="layoutService.business.isHandset() ? 'column' : 'row wrap'"
+        class="portfolio-item-container display_block">
+        <div fxFlex="33.3333" *ngFor="let portfolioItem of portfolioItems" class="padding_16p">
+          <div #portfolioItemContainer>
+            <app-portfolio-item [style.height.px]="portfolioItemContainer.clientWidth * 9 / 16" fxFlexFill [item]="portfolioItem" class="display_block">
+            </app-portfolio-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.detail-ball {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    left: -7px;
+    top: 0;
+    transition: background-color 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.read-icon {
+  transition: color 300ms ease-in-out;
+}

@@ -1,0 +1,6 @@
+<div fxFlexFill fxLayout="column" fxLayoutAlign="start" fxLayoutGap="32px">
+  <mat-language classList="theme-primary_background_300"></mat-language>
+  <app-theme></app-theme>
+  <app-social-media *ngIf="layoutService.business.isHandset()"></app-social-media>
+  <app-full-screen *ngIf="!layoutService.business.isHandset()"></app-full-screen>
+</div>

@@ -1,0 +1,33 @@
+.section-header {
+  height: 70px;
+}
+
+.header-label {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.header-underline {
+  width: 180px;
+  height: 2px;
+}
+
+.header-border {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  left: 33.33%;
+  top: 0;
+  transition: background-color 300ms ease-in-out, width 300ms ease-in-out, left 300ms ease-in-out;
+}
+
+.header-container:hover .header-border {
+  width: 180px;
+  left: 0;
+}
+
+.header-background {
+  top: 20px;
+  font-size: 90px;
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "p": "UI/UX Designer",
+    "d": "He can always translate my design into code without requiring me to make changes. He has a very amazing understanding of my design prototype even when I don't include every detail as I should which helps the project develop faster."
+  },
+  {
+    "id": 2,
+    "p": "Frontend Developer",
+    "d": "Shares positive thoughts and ideas on issues, and this helps others to have a positive outlook about their jobs."
+  },
+  {
+    "id": 3,
+    "p": "Backend Developer",
+    "d": "Possesses the ability to challenge common problems by creating new and innovative solutions."
+  },
+  {
+    "id": 4,
+    "p": "Database Master",
+    "d": "Helps the team to keep engaged and focused."
+  }
+]

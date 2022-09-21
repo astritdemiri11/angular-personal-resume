@@ -1,0 +1,21 @@
+<div fxFlex class="padding_16p">
+  <div fxFlexFill (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()" fxLayout="column" fxLayoutGap="8px"
+    class="border-solid_1 theme-primary_background_300 theme-primary_border_200 padding_32p">
+    <ng-container *ngIf="item">
+      <div #iconTitle fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px" class="product-icon-title">
+        <div fxLayout fxLayoutAlign="center center"
+          class="product-icon border-solid_1 theme-primary_background theme-primary_border_200">
+          <mat-icon *ngIf="item.icon" [svgIcon]="item.icon" class="opacity_0_5"></mat-icon>
+        </div>
+
+        <div class="mat-title margin_0 font-family_secondary">
+          <p [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }" class="product-title">{{ item.title }}</p>
+        </div>
+      </div>
+
+      <div class="mat-subheading-2 font-family_secondary opacity_0_65 text-align_center">
+        <p [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">{{ item.description }}</p>
+      </div>
+    </ng-container>
+  </div>
+</div>

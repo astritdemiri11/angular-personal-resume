@@ -1,0 +1,44 @@
+<app-intro #fragmentElem id="intro" class="theme-primary_background"></app-intro>
+<app-about-me #fragmentElem id="aboutMe" class="theme-primary_background_400"></app-about-me>
+
+<virtual-load #fragmentElem id="products" *serverSideRender="false" class="theme-primary_background_400">
+  <ng-template loadContent>
+    <app-product></app-product>
+  </ng-template>
+</virtual-load>
+
+<virtual-load #fragmentElem id="skills" *serverSideRender="false" class="theme-primary_background">
+  <ng-template loadContent>
+    <app-skill></app-skill>
+  </ng-template>
+</virtual-load>
+
+<virtual-load #fragmentElem id="resume" *serverSideRender="false" class="theme-primary_background">
+  <ng-template loadContent>
+    <app-resume></app-resume>
+  </ng-template>
+</virtual-load>
+
+<virtual-load #fragmentElem id="portfolio" *serverSideRender="false" class="theme-primary_background_400">
+  <ng-template loadContent>
+    <app-portfolio></app-portfolio>
+  </ng-template>
+</virtual-load>
+
+<virtual-load #fragmentElem id="review" *serverSideRender="false" class="theme-primary_background">
+  <ng-template loadContent>
+    <app-user-review></app-user-review>
+  </ng-template>
+</virtual-load>
+
+<virtual-load #fragmentElem id="blog" *serverSideRender="false" class="theme-primary_background_400">
+  <ng-template loadContent>
+    <app-blog></app-blog>
+  </ng-template>
+</virtual-load>
+
+<virtual-load #fragmentElem id="contactMe" *serverSideRender="false" class="theme-primary_background">
+  <ng-template loadContent>
+    <app-contact-me></app-contact-me>
+  </ng-template>
+</virtual-load>

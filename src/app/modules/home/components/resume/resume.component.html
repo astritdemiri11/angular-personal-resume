@@ -1,0 +1,16 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-top_128p padding-bottom_32p">
+  <app-section-header appDisplayMode="fadeInTop" class="header display_block opacity_0" label="resume"></app-section-header>
+
+  <div appDisplayMode="fadeInTop" fxLayout fxLayoutAlign="center" class="opacity_0">
+    <div fxFlex [fxLayout]="layoutService.business.isHandset() ? 'column' : 'row'" fxLayoutAlign="space-between" fxLayoutGap="32px" class="width_100 container-max-width"
+      [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <div fxFlex>
+        <app-resume-item [item]="experience" title="experience" icon="business_center" class="display_block"></app-resume-item>
+      </div>
+
+      <div fxFlex>
+        <app-resume-item [item]="education" title="education" icon="school" class="display_block"></app-resume-item>
+      </div>
+    </div>
+  </div>
+</div>

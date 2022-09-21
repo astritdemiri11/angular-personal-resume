@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "f": "Reixhons Gjoni",
+    "p": "UI/UX Designer",
+    "i": "/assets/images/webp/user-review/reixhons-gjoni.webp",
+    "l": "",
+    "d": "Değişiklik yapmamı gerektirmeden tasarımımı her zaman koda çevirebilir. Projenin daha hızlı gelişmesine yardımcı olan her ayrıntıyı gerektiği gibi eklemediğimde bile tasarım prototipim hakkında çok şaşırtıcı bir anlayışa sahip."
+  },
+  {
+    "id": 2,
+    "f": "Evis Kraja",
+    "p": "Frontend Developer",
+    "i": "/assets/images/webp/user-review/evis-kraja.webp",
+    "l": "",
+    "d": "Sorunlar hakkında olumlu düşünce ve fikirleri paylaşır ve bu, başkalarının işleri hakkında olumlu bir bakış açısına sahip olmalarına yardımcı olur."
+  },
+  {
+    "id": 3,
+    "f": "Redi Zogolli",
+    "p": "Backend Developer",
+    "i": "/assets/images/webp/user-review/redi-zogolli.webp",
+    "l": "",
+    "d": "Yeni ve yenilikçi çözümler üreterek ortak sorunlara meydan okuma yeteneğine sahiptir."
+  },
+  {
+    "id": 4,
+    "f": "Kevin Karafili",
+    "p": "Database Master",
+    "i": "/assets/images/webp/user-review/kevin-karafili.webp",
+    "l": "",
+    "d": "Takımın bağlı kalmasına ve odaklanmasına yardımcı olur."
+  }
+]

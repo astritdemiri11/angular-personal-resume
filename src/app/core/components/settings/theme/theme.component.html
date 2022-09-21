@@ -1,0 +1,11 @@
+<div fxFlexFill fxLayout fxLayoutAlign="space-between center" fxLayoutGap="8px">
+  <div>
+    <span translate="theme" translateFeature="core"></span>:
+  </div>
+
+  <div fxFlex fxLayout="row wrap" fxLayoutAlign="end center" fxLayoutGap="16px">
+    <div *ngFor="let theme of themes" (click)="onThemeSet(theme)" class="theme-item default_value position_relative" [class]="theme"
+        [class.active]="theme === selectedTheme"
+        [ngClass]="{ 'dimension-32p': layoutService.business.isHandset(), 'dimension-24p': !layoutService.business.isHandset() }"></div>
+  </div>
+</div>

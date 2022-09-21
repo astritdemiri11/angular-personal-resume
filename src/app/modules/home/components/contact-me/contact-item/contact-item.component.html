@@ -1,0 +1,23 @@
+<div fxLayout fxLayoutAlign="left" fxLayoutGap="16px">
+  <div class="contact-icon-container border-solid_1 theme-primary_border_200">
+    <div fxLayout fxLayoutAlign="start">
+      <div fxLayout fxLayoutAlign="center center" class="contact-icon opacity_0_65">
+        <mat-icon>{{ icon }}</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout="column" fxLayoutGap="8px">
+    <div class="mat-title font-family_secondary">
+      <p [translate]="label" translateFeature="home" class="line-height_1"></p>
+    </div>
+
+    <div>
+      <div *ngFor="let value of values">
+        <div class="mat-subheading-2 margin_0 font-family_secondary opacity_0_65">
+          <a [href]="getLink(value)" target="_blank">{{ value }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "aboutMe": "About me",
+  "address": "Address",
+  "available": "Available",
+  "birthday": "Birthday",
+  "blog": "Blog",
+  "by": "By",
+  "call": "Call",
+  "contactInfo": "Contact Info",
+  "contactMe": "Contact me",
+  "downloadCV": "Download CV",
+  "education": "Education",
+  "email": "Email",
+  "experience": "Experience",
+  "freelance": "Freelance",
+  "hireMe": "Hire me",
+  "language": "Language",
+  "mySkills": "My skills",
+  "phone": "Phone",
+  "portfolio": "Portfolio",
+  "presentDay": "Present",
+  "resume": "Resume",
+  "reviews": "Reviews",
+  "sendMessage": "Send Message",
+  "services": "Services",
+  "yourEmail": "Your Email",
+  "yourMessage": "Your Message",
+  "yourName": "Your Name",
+  "yourSubject": "Your Subject",
+  "greeting": {
+    "v1": "Hello, I'm",
+    "v2": "Hi there! I'm",
+    "v3": "Just say Hello"
+  },
+  "formMessages": {
+    "required": "This field is required!",
+    "invalidEmail": "Not a valid email!"
+  },
+  "description": {
+    "contactMe": "Some contact forms how to reach me.",
+    "visitMedia": "Visit my social profile and get connected."
+  },
+  "header": {
+    "skills": "All the skills I have achieved at work, school and exploring."
+  }
+}

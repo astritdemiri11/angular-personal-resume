@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "about": "About",
+    "api": "API",
+    "blog": "Blog",
+    "contact": "Contact",
+    "docs": "Docs",
+    "home": "Home",
+    "language": "Language",
+    "portfolio": "Portfolio",
+    "privacy": "Privacy",
+    "resume": "Resume",
+    "security": "Security",
+    "terms": "Terms",
+    "training": "Training"
+  },
+  "message": {
+    "websiteDescription": "Why this website is special?"
+  },
+  "fullScreen": "Full screen",
+  "socialLink": "Social link",
+  "theme": "Theme"
+}

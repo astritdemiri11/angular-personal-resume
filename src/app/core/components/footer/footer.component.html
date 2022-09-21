@@ -1,0 +1,10 @@
+<div fxLayout fxLayoutAlign="center" class="padding-bottom_32p padding-top_128p theme-primary_background">
+  <div fxFlex [fxLayout]="layoutService.business.isHandset() ? 'column-reverse' : 'row'"
+  [fxLayoutAlign]="layoutService.business.isHandset() ? 'space-between' : 'space-between center'"
+    fxLayoutGap="32px" class="width_100 container-max-width"
+    [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+    <app-copyright fxFlex></app-copyright>
+
+    <app-footer-menu-outlet></app-footer-menu-outlet>
+  </div>
+</div>

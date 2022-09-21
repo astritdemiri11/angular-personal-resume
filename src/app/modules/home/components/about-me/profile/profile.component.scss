@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+}
+
+.read-icon {
+  transition: color 300ms ease-in-out;
+}
+
+mat-list-item {
+  height: 42px !important;
+}
+
+mat-list-item .key {
+  width: 100px;
+  flex-shrink: 0;
+  margin-left: -16px;
+}
+
+mat-list-item .value {
+  width: calc(100% - 100px);
+}
+
+.language-name:not(:last-child) span::after {
+  content: ",";
+  margin-right: 4px;
+}

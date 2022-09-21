@@ -1,0 +1,46 @@
+{
+  "aboutMe": "Hakkımda",
+  "address": "Adres",
+  "available": "Müsait",
+  "birthday": "Doğum günü",
+  "blog": "Blog",
+  "by": "By",
+  "call": "Ara",
+  "contactInfo": "İletişim Bilgileri",
+  "contactMe": "Bana ulaşın",
+  "downloadCV": "Download CV",
+  "education": "Eğitim",
+  "email": "E-posta",
+  "experience": "Deneyim",
+  "freelance": "Freelance",
+  "hireMe": "Beni işe al",
+  "language": "Dil",
+  "mySkills": "Becerilerim",
+  "phone": "Telefon",
+  "portfolio": "Portfolyo",
+  "presentDay": "Mevcut",
+  "resume": "Özgeçmiş",
+  "reviews": "İncelemeler",
+  "sendMessage": "Mesaj Gönder",
+  "services": "Hizmetler",
+  "yourEmail": "E-postanız",
+  "yourMessage": "Mesajınız",
+  "yourName": "Adınız",
+  "yourSubject": "Konunuz",
+  "greeting": {
+    "v1": "Merhaba, ben",
+    "v2": "Merhaba! Ben",
+    "v3": "Sadece Merhaba de"
+  },
+  "formMessages": {
+    "required": "Bu alan gereklidir!",
+    "invalidEmail": "Geçerli bir e-posta değil!"
+  },
+  "description": {
+    "contactMe": "Bazı iletişim formları bana nasıl ulaşılır.",
+    "visitMedia": "Sosyal profilimi ziyaret edin ve bağlantı kurun."
+  },
+  "header": {
+    "skills": "İşte, okulda ve keşfetmede elde ettiğim tüm beceriler."
+  }
+}

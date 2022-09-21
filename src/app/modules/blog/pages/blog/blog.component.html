@@ -1,0 +1,43 @@
+<mat-sidenav-container [ngStyle]="{ 'position' : sidenavBlog.opened ? 'fixed' : 'relative'}">
+  <mat-sidenav #sidenavBlog [attr.role]="getSidenavRole()" [mode]="getSidenavMode()" [opened]="isSidenavOpened()"
+    class="sidenav-blog theme-primary_background">
+    <div *ngIf="layoutService.business.isHandset()" fxFlexFill class="padding-horizontal_16p">
+      <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+        <carousel [configs]="carouselConfigs" class="blog-carousel-mobile">
+          <app-blog-carousel-item *ngFor="let blog of blogs"
+            [class.theme-primary_background_200]="blog.name === selectedBlogName" [item]="blog" carouselItem>
+          </app-blog-carousel-item>
+        </carousel>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div fxLayout="column" fxLayoutGap="16px" class="padding-top_32p padding-bottom_32p theme-primary_background"
+      [class.handset]="layoutService.business.isHandset()">
+
+      <div fxLayout fxLayoutAlign="center">
+        <div fxFlex class="width_100 container-max-width"
+          [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+          <div fxFlexFill>
+            <router-outlet></router-outlet>
+
+            <div *ngIf="!layoutService.business.isHandset()" class="blog-carousel-container">
+              <carousel [configs]="carouselConfigs" fxFlexFill>
+                <app-blog-carousel-item *ngFor="let blog of blogs" [item]="blog"
+                  [class.theme-primary_background_200]="blog.name === selectedBlogName" carouselItem>
+                </app-blog-carousel-item>
+              </carousel>
+            </div>
+
+            <div *ngIf="layoutService.business.isHandset()" class="blog-list-btn position_fixed">
+              <button mat-mini-fab color="primary" (click)="sidenavBlog.toggle()">
+                <mat-icon>list</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

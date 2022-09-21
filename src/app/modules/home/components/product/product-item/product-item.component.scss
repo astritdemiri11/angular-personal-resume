@@ -1,0 +1,20 @@
+.product-icon {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  font-size: 50px;
+}
+
+.product-icon mat-icon {
+  width: 50px;
+  height: 50px;
+  transition: opacity 300ms ease-in-out;
+}
+
+.mouse-over .product-icon mat-icon {
+  opacity: 1;
+}
+
+.product-icon-title {
+  transition: color 300ms ease-in-out, fill 300ms ease-in-out;
+}

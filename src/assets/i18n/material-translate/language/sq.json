@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "n": "Anglisht",
+    "c": "en",
+    "f": "us"
+  },
+  {
+    "id": "2",
+    "n": "Italisht",
+    "c": "it",
+    "f": "it"
+  },
+  {
+    "id": "3",
+    "n": "Gjermanisht",
+    "c": "de",
+    "f": "de"
+  },
+  {
+    "id": "4",
+    "n": "Turqisht",
+    "c": "tr",
+    "f": "tr"
+  },
+  {
+    "id": "5",
+    "n": "Shqip",
+    "c": "sq",
+    "f": "al"
+  }
+]

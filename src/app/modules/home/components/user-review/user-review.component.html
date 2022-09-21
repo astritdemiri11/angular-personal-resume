@@ -1,0 +1,15 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-top_128p padding-bottom_32p" [class.handset]="layoutService.business.isHandset()">
+  <app-section-header appDisplayMode="fadeInTop" class="header display_block opacity_0" label="reviews"></app-section-header>
+
+  <div appDisplayMode="fadeInTop" fxLayout fxLayoutAlign="center" class="opacity_0">
+    <div fxFlex class="width_100 container-max-width"
+      [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <div class="carousel-container">
+        <carousel #carousel [configs]="carouselConfigs" fxFlexFill>
+          <app-user-review-item *ngFor="let userReview of userReviews" carouselItem [item]="userReview">
+          </app-user-review-item>
+        </carousel>
+      </div>
+    </div>
+  </div>
+</div>

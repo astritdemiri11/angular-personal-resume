@@ -1,0 +1,52 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-top_128p padding-bottom_32p">
+  <app-section-header appDisplayMode="fadeInTop"
+    class="display_block opacity_0" label="contactMe"></app-section-header>
+
+  <div appDisplayMode="fadeInTop" fxLayout fxLayoutAlign="center"
+    class="opacity_0">
+    <div fxFlex [fxLayout]="layoutService.business.isHandset() ? 'column' : 'row'" fxLayoutGap="32px"
+      class="width_100 container-max-width" [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <div fxFlex fxLayout="column" fxLayoutGap="16px">
+        <div class="mat-display-1 line-height_1 font-family_secondary">
+          <p translate="greeting.v3" translateFeature="home"></p>
+        </div>
+
+        <app-contact-form class="display_block"></app-contact-form>
+      </div>
+
+      <div fxFlex fxLayout="column" fxLayoutGap="32px">
+        <div fxLayout="column" fxLayoutGap="16px" class="mat-display-1 line-height_1 font-family_secondary">
+          <div>
+            <p translate="contactInfo" translateFeature="home" class="line-height_1"></p>
+          </div>
+
+          <div>
+            <p translate="description.contactMe" translateFeature="home"
+              class="mat-subheading-2 line-height_1 font-family_secondary opacity_0_65"></p>
+          </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="16px">
+          <ng-container *ngIf="contactService.model.contact$ | async as contact">
+            <app-contact-item type="email" label="email" icon="email" matIcon [values]="contact.emails">
+            </app-contact-item>
+            <app-contact-item type="phone" label="phone" icon="phone" matIcon [values]="contact.phones">
+            </app-contact-item>
+            <app-contact-item type="address" label="address" icon="home_pin" matIcon [values]="contact.addresses">
+            </app-contact-item>
+          </ng-container>
+        </div>
+
+        <div class="mat-title line-height_1 font-family_secondary opacity_0_65">
+          <p translate="description.visitMedia" translateFeature="home"></p>
+        </div>
+
+        <div fxLayout [fxLayoutAlign]="layoutService.business.isHandset() ? 'center' : 'start'" fxLayoutGap="16px">
+          <app-social-media-item *ngFor="let socialMediaItem of socialMediaItems" [item]="socialMediaItem"
+            class="display_block">
+          </app-social-media-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

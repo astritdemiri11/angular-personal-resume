@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "t": "Styling: CSS3/SASS"
+  },
+  {
+    "id": 2,
+    "t": "Markup: HTML5/XML"
+  },
+  {
+    "id": 3,
+    "t": "Frontend script: Javascript/Typescript"
+  },
+  {
+    "id": 4,
+    "t": "Frontend library: jQuery"
+  },
+  {
+    "id": 5,
+    "t": "Frontend library: React DE"
+  },
+  {
+    "id": 6,
+    "t": "Frontend framework: AngularJs/Angular"
+  },
+  {
+    "id": 7,
+    "t": "Backend script: C#"
+  },
+  {
+    "id": 8,
+    "t": "Backend server environment: NodeJs"
+  },
+  {
+    "id": 9,
+    "t": "Backend framework: .NET Framework / .NET Core / Entity Framework"
+  },
+  {
+    "id": 10,
+    "t": "Backend framework: Node express"
+  },
+  {
+    "id": 11,
+    "t": "In-memory Database: Redis"
+  },
+  {
+    "id": 12,
+    "t": "Post-relational Database: MongoDB/Firebase"
+  },
+  {
+    "id": 13,
+    "t": "Relational Database query: SQL/T-SQL"
+  },
+  {
+    "id": 14,
+    "t": "Source control: TFS/Git"
+  },
+  {
+    "id": 15,
+    "t": "APIs architecture: REST/SOAP/RPC/GraphQL"
+  },
+  {
+    "id": 16,
+    "t": "Projectdeployment: Docker/Windows Server"
+  },
+  {
+    "id": 17,
+    "t": "Project postdeployment: Speed/Security/Minimal traffic consumption"
+  },
+  {
+    "id": 18,
+    "t": "Video editing: Adobe Premiere Pro"
+  }
+]

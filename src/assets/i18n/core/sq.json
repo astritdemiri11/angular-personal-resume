@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "about": "Rreth",
+    "api": "API",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "docs": "Dokumenta",
+    "home": "Hyrje",
+    "language": "Gjuha",
+    "portfolio": "Portofoli",
+    "privacy": "Privacia",
+    "resume": "Rezyme",
+    "security": "Siguria",
+    "terms": "Kushtet",
+    "training": "Trajnim"
+  },
+  "message": {
+    "websiteDescription": "Perse kjo faqe interneti eshte e vecante?"
+  },
+  "fullScreen": "Ekran i plote",
+  "socialLink": "Linku social",
+  "theme": "Tema"
+}

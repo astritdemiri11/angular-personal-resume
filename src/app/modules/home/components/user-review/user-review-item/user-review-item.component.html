@@ -1,0 +1,37 @@
+<div fxFlexFill (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()" fxLayout="column"
+  fxLayoutAlign="space-between" class="review-container padding_16p height_100">
+  <ng-container *ngIf="item">
+    <div [fxFlex]="layoutService.business.isHandset() ? '0 0 60' : '0 0 50'" class="position_relative">
+      <div class="position_absolute top_0 left_0 margin_8p">
+        <mat-icon svgIcon="other:quote" color="primary" class="opacity_0_65"></mat-icon>
+      </div>
+
+      <div #reviewTriangle class="review-triangle position_absolute bottom_0 border-solid_1
+            theme-primary_background_300 theme-primary_border_200">
+      </div>
+
+      <div #review fxFlex fxLayout="column" fxLayoutAlign="center center"
+        class="review border-solid_1 theme-primary_background_300 theme-primary_border_200">
+        <div class="mat-subheading-2 margin_0 padding_8p font-family_secondary opacity_0_65 text-align_center">
+          <p [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">"{{item.description }}"</p>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+      <div>
+        <img [src]="item.image" [alt]="item.fullName" class="review-image" />
+      </div>
+
+      <div fxLayout="column" fxLayoutAlign="space-between center">
+        <div #reviewLabel class="review-label mat-title margin_0 font-family_secondary">
+          <p itemtype="colleague">{{ item.fullName }}</p>
+        </div>
+
+        <div class="mat-subheading-2 margin_0 font-family_secondary opacity_0_65">
+          <p [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">{{ item.profession }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

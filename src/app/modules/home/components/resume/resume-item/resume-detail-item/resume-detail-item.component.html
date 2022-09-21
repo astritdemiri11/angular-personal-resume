@@ -1,0 +1,45 @@
+<ng-container *ngIf="item">
+  <div class="position_relative padding-left_32p">
+    <div (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()">
+      <div #detailBall class="detail-ball position_absolute top_0 left_ 0
+       theme-primary_background theme-primary_border_200 transition_300ms">
+      </div>
+
+      <div class="mat-headline line-height_1 margin-bottom_8p font-family_secondary theme-accent_color">
+        <p [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">{{ item.title }}</p>
+      </div>
+
+      <div class="margin-bottom_16p mat-subheading-2 font-family_secondary opacity_0_65">
+        <span>{{ item.startDate | customDate:'longDate' }} - </span>
+
+        <ng-container *ngIf="item.endDate; else presentDate">
+          <span>{{ item.endDate | customDate:'longDate' }}</span>
+        </ng-container>
+
+        <ng-template #presentDate>
+          <span translate="presentDay" translateFeature="home"></span>
+        </ng-template>
+      </div>
+
+      <div fxLayout fxLayoutGap="8px" class="margin-bottom_8p mat-title font-family_secondary">
+        <p fxFlex>{{ item.subtitle }}</p>
+
+        <button aria-label="Read text" (click)="textRead.start()" mat-icon-button *ngIf="!textRead.reading; else stopReadingBtn">
+          <mat-icon color="accent" class="read-icon">edit_note</mat-icon>
+        </button>
+
+        <ng-template #stopReadingBtn>
+          <button aria-label="Stop read text" (click)="textRead.reveal()" mat-icon-button>
+            <mat-icon color="accent" class="read-icon">front_hand</mat-icon>
+          </button>
+        </ng-template>
+      </div>
+
+      <div class="mat-subheading-2 position_relative font-weight_300 font-family_secondary opacity_0_65">
+        <text-read #textRead [relativeTo]="textContainer" [speed]="14000" [rowHeight]="28"
+          overlayClass="theme-primary_background" cursorClass="theme-accent_background"></text-read>
+        <p #textContainer [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</ng-container>

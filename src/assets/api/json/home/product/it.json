@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "t": "Sviluppo front-end",
+    "i": "service:sketch",
+    "d": "Sviluppo di applicazioni con i nuovi framework e librerie frontend come Angular, React, jQuery e le classiche Vanilla Js."
+  },
+  {
+    "id": 2,
+    "t": "Progettazione UI/UX",
+    "i": "service:ui_ux",
+    "d": "Facile progettazione di applicazioni moderne con l'aiuto del Material Design e la potenza della strutturazione HTML/Jade e dello stile CSS/SCSS/SASS."
+  },
+  {
+    "id": 3,
+    "t": "Struttura del progetto",
+    "i": "service:product",
+    "d": "Strutturare, proteggere e gestire facilmente i progetti all'interno del team con l'aiuto della gestione dello stato, del modello MVC, delle API disponibili e della gestione del controllo del codice sorgente."
+  },
+  {
+    "id": 4,
+    "t": "App mobile",
+    "i": "service:app",
+    "d": "Conversione di applicazioni Web in applicazioni Android, iOS e persino Universal Windows Platform con l'aiuto di NativeScript."
+  },
+  {
+    "id": 5,
+    "t": "Design reattivo",
+    "i": "service:responsive",
+    "d": "Progettazione mobile first facile con l'aiuto di Media Query e Material Layout e le più recenti tecnologie come Flex e Grid design."
+  },
+  {
+    "id": 6,
+    "t": "Montaggio video",
+    "i": "service:motion",
+    "d": "Un utile accessorio per lo sviluppo web è la mia capacità di presentare il prodotto creando e modificando video con l'aiuto di Adobe Premiere Pro."
+  }
+]

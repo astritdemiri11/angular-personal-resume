@@ -1,0 +1,16 @@
+<div fxLayout="column" fxLayoutGap="32px">
+  <div fxLayout fxLayoutAlign="left center" fxLayoutGap="16px">
+    <mat-icon class="icon dimension-64p opacity_0_5">{{ icon }}</mat-icon>
+
+    <div class="mat-display-1 margin_0 font-family_secondary">
+      <p [translate]="title" translateFeature="home"></p>
+    </div>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="32px"
+    class="details-container margin-left_16p theme-primary_border_200">
+    <ng-container *ngIf="item">
+      <app-resume-detail-item *ngFor="let detail of item" [item]="detail"></app-resume-detail-item>
+    </ng-container>
+  </div>
+</div>

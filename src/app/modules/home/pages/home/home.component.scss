@@ -1,0 +1,37 @@
+virtual-load {
+  display: block;
+  min-height: 100px;
+}
+
+#intro {
+  display: block;
+  height: calc(100vh - 80px);
+}
+
+#products {
+  min-height: 1000px;
+}
+
+#skills {
+  min-height: 700px;
+}
+
+#resume {
+  min-height: 1400px;
+}
+
+#portfolio {
+  min-height: 800px;
+}
+
+#review {
+  min-height: 500px;
+}
+
+#blog {
+  min-height: 500px;
+}
+
+#contactMe {
+  min-height: 700px;
+}

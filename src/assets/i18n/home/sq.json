@@ -1,0 +1,46 @@
+{
+  "aboutMe": "Rreth meje",
+  "address": "Adresa",
+  "available": "I disponueshëm",
+  "birthday": "Ditëlindja",
+  "blog": "Blog",
+  "by": "Nga",
+  "call": "Telefono",
+  "contactInfo": "Info Kontakti",
+  "contactMe": "Më kontakto",
+  "downloadCV": "Shkarko CV",
+  "education": "Edukimi",
+  "email": "Email",
+  "experience": "Eksperienca",
+  "freelance": "Freelance",
+  "hireMe": "Më punëso",
+  "language": "Gjuha",
+  "mySkills": "Aftësitë e mia",
+  "phone": "Telefon",
+  "portfolio": "Portofoli",
+  "presentDay": "Dita e sotme",
+  "resume": "Rezyme",
+  "reviews": "Komente",
+  "sendMessage": "Dërgo mesazh",
+  "services": "Shërbimet",
+  "yourEmail": "Email-i juaj",
+  "yourMessage": "Mesazhi juaj",
+  "yourName": "Emri juaj",
+  "yourSubject": "Subjekti juaj",
+  "greeting": {
+    "v1": "Përshëndetje, unë jam",
+    "v2": "Përshëndetje! Unë jam",
+    "v3": "Vetëm thuaj përshëndetje"
+  },
+  "formMessages": {
+    "required": "Kjo fushe eshte e detyrueshme!",
+    "invalidEmail": "Email nuk eshte i sakte!"
+  },
+  "description": {
+    "contactMe": "Disa forma si të më kontaktojnë.",
+    "visitMedia": "Vizito profilin tim social dhe lidhuni."
+  },
+  "header": {
+    "skills": "Të gjitha aftësitë që kam arritur në punë, shkollë dhe eksplorim."
+  }
+}

@@ -1,0 +1,52 @@
+<mat-sidenav-container [ngStyle] = "{ 'position' : sidenavProject.opened ? 'fixed' : 'relative'}">
+  <mat-sidenav #sidenavProject [attr.role]="getSidenavRole()" [mode]="getSidenavMode()" [opened]="isSidenavOpened()"
+    class="sidenav-project theme-primary_background">
+    <div *ngIf="layoutService.business.isHandset()" fxFlexFill class="padding-horizontal_16p">
+      <div fxFlex fxLayout="column" fxLayoutAlign="start start">
+        <carousel [configs]="carouselConfigs" class="project-carousel-mobile">
+          <div *ngFor="let project of projects" class="padding_16p"
+            [class.theme-primary_background_200]="project.name === selectedProjectName" carouselItem>
+            <div fxFlex #projectContainer>
+              <app-project-carousel-item [style.width.px]="projectContainer.clientWidth * 16 / 9" [item]="project">
+              </app-project-carousel-item>
+            </div>
+          </div>
+        </carousel>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div fxLayout="column" fxLayoutGap="16px" class="padding-top_32p padding-bottom_32p theme-primary_background"
+      [class.handset]="layoutService.business.isHandset()">
+
+      <div fxLayout fxLayoutAlign="center">
+        <div fxFlex class="width_100 container-max-width"
+          [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+          <div fxFlexFill>
+            <router-outlet></router-outlet>
+
+            <div *ngIf="!layoutService.business.isHandset()" class="project-carousel-container">
+              <carousel [configs]="carouselConfigs" fxFlexFill>
+                <div *ngFor="let project of projects" class="padding_16p"
+                  [class.theme-primary_background_200]="project.name === selectedProjectName" carouselItem>
+                  <div fxFlex #projectContainer>
+                    <app-project-carousel-item [style.height.px]="projectContainer.clientWidth * 9 / 16"
+                      [item]="project">
+                    </app-project-carousel-item>
+                  </div>
+                </div>
+              </carousel>
+            </div>
+
+            <div *ngIf="layoutService.business.isHandset()" class="project-list-btn position_fixed">
+              <button mat-mini-fab color="primary" (click)="sidenavProject.open()">
+                <mat-icon>list</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

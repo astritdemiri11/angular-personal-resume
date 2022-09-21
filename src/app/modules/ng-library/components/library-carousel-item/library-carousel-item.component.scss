@@ -1,0 +1,30 @@
+.library {
+  transition: opacity 300ms ease-in-out;
+}
+
+.library-backdrop {
+  transition: opacity 300ms ease-in-out;
+}
+
+.library-button {
+  margin-top: -20px;
+}
+
+.library-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: background-size 300ms ease-in-out;
+}
+
+.library-container:hover .library-backdrop {
+  opacity: 0.65;
+}
+
+.library-container:hover .library {
+  opacity: 1;
+}
+
+.library-container:hover .library-image {
+  background-size: 110%;
+}

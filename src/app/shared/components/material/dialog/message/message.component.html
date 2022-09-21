@@ -1,0 +1,20 @@
+<div class="dialog-header theme-primary_background_200">
+  <h1 mat-dialog-title>{{ data.header }}</h1>
+  <div mat-dialog-content>
+    <div *ngIf="data.success; else errorMessage"
+      class="message-container text-center theme-accent_border theme-accent_color padding_16p">
+      {{ data.content }}
+    </div>
+
+    <ng-template #errorMessage>
+      <div
+        class="message-container text-center theme-warn_border theme-warn_color padding_16p">
+        {{ data.content }}
+      </div>
+    </ng-template>
+  </div>
+  <div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+  </div>
+
+</div>

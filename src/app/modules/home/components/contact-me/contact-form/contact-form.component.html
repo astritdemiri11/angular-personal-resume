@@ -1,0 +1,48 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutGap="8px">
+  <div fxLayout="column" fxLayoutGap="16px">
+    <mat-form-field color="accent" appearance="fill">
+      <mat-label translate="yourName" translateFeature="home"></mat-label>
+      <input name="name" matInput formControlName="name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-error *ngIf="nameControl.errors && nameControl.errors['required']">{{ 'formMessages.required' |
+        translate:'home' }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field color="accent" appearance="fill">
+      <mat-label translate="yourEmail" translateFeature="home"></mat-label>
+      <input name="email" type="email" matInput formControlName="email">
+      <mat-icon matSuffix>email</mat-icon>
+      <mat-error *ngIf="emailControl.errors && emailControl.errors['required']">{{ 'formMessages.required' |
+        translate:'home' }}</mat-error>
+      <mat-error *ngIf="emailControl.errors && emailControl.errors['email']">{{ 'formMessages.invalidEmail' |
+        translate:'home' }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field color="accent" appearance="fill">
+      <mat-label translate="yourSubject" translateFeature="home"></mat-label>
+      <input name="subject" matInput formControlName="subject">
+      <mat-icon matSuffix>subject</mat-icon>
+      <mat-error *ngIf="subjectControl.errors && subjectControl.errors['required']">{{ 'formMessages.required' |
+        translate:'home' }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field color="accent" appearance="fill">
+      <mat-label translate="yourMessage" translateFeature="home"></mat-label>
+      <textarea name="message" rows="6" matInput formControlName="message"></textarea>
+      <mat-icon matSuffix>message</mat-icon>
+      <mat-error *ngIf="messageControl.errors && messageControl.errors['required']">{{ 'formMessages.required' |
+        translate:'home' }}</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div fxLayout fxLayoutAlign="end">
+    <button [disabled]="contactForm.invalid || sending" aria-label="Send message" mat-raised-button color="accent"
+      fxLayout fxLayoutAlign="center center" class="padding-horizontal_16p padding-vertical_8p send-btn">
+      <span *ngIf="!sending; else sendingSpinner" translate="sendMessage" translateFeature="home"></span>
+
+      <ng-template #sendingSpinner>
+        <mat-spinner class="" [diameter]="20"></mat-spinner>
+      </ng-template>
+    </button>
+  </div>
+</form>

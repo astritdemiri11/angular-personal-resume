@@ -1,0 +1,23 @@
+@use "@angular/material" as mat;
+
+@use "./palette/darkBlue" as palette-darkBlue;
+@use "./palette/blue" as palette-blue;
+
+$palette-darkBlue: mat.define-palette(
+  palette-darkBlue.$palette,
+  500,
+  300,
+  700
+);
+$palette-blue: mat.define-palette(palette-blue.$palette);
+$palette-amber: mat.define-palette(mat.$amber-palette);
+
+$theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $palette-darkBlue,
+      accent: $palette-blue,
+      warn: $palette-amber
+    )
+  )
+);

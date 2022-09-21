@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "t": "Frontend Development",
+    "d": "Developing applications with the newest fronted frameworks and libraries such as Angular, React, jQuery and the classic VanillaJs."
+  },
+  {
+    "id": 2,
+    "t": "UI/UX Design",
+    "d": "Easy designing modern applications with the help of the Material Design and the power of HTML/Jade structuring and CSS/SCSS/SASS styling."
+  },
+  {
+    "id": 3,
+    "t": "Project Structure",
+    "d": "Structuring, securing and easy maintaining projects among the team with the help of state management, MVC pattern, available APIs and source control management."
+  },
+  {
+    "id": 4,
+    "t": "Mobile App",
+    "d": "Converting web applications into Android, iOS, and even the Universal Windows Platform applications with the help of NativeScript."
+  },
+  {
+    "id": 5,
+    "t": "Responsive Design",
+    "d": "Mobile first designing easy done with the help of Media Queries and Material Layout and newest technologies such as Flex and Grid design."
+  },
+  {
+    "id": 6,
+    "t": "Video Editing",
+    "d": "An helpful accessory for web development is my ability to present the product by creating and editing videos with the help of Adobe Premiere Pro."
+  }
+]

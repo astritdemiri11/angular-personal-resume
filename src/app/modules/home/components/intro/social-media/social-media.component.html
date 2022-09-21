@@ -1,0 +1,8 @@
+<div fxLayout fxLayoutAlign="space-between center" class="social-media-container
+padding-right_16p padding-left_16p border-solid_1 theme-primary_background_300 theme-primary_border_200"
+[class.handset]="layoutService.business.isHandset()">
+  <ng-container *ngIf="socialMediaItems">
+    <app-social-media-item *ngFor="let socialMediaItem of socialMediaItems" [item]="socialMediaItem" class="display_block">
+    </app-social-media-item>
+  </ng-container>
+</div>

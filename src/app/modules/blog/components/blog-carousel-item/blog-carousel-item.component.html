@@ -1,0 +1,20 @@
+<ng-container *ngIf="item">
+  <div fxFlexFill class="padding_16p" [class.handset]="layoutService.business.isHandset()">
+    <a fxFlex fxLayout="column" fxLayoutGap="16px" [routerLink]="[item.link]" class="blog-link">
+      <div [fxFlex]="layoutService.business.isHandset() ? '0 0 50' : '0 0 65'" class="position_relative">
+        <div class="blog-image position_absolute top_0 left_0 width_100 height_100"
+          [style.background-image]="'url(' + item.image + ')'"></div>
+      </div>
+
+      <div class="mat-body-1 font-family_secondary">
+        <span translate="by" translateFeature="home"></span>:
+        <span class="margin-left_8p theme-accent_color">{{ item.creator }} | {{ item.date | customDate:'longDate' }}</span>
+      </div>
+
+      <div (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()">
+        <span #blogLink [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }"
+          class="blog-description mat-title line-height_1 font-family_secondary">{{ item.description }}</span>
+      </div>
+    </a>
+  </div>
+</ng-container>

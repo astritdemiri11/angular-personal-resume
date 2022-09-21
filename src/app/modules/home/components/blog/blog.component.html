@@ -1,0 +1,15 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-bottom_32p padding-top_128p">
+  <app-section-header appDisplayMode="fadeInTop" class="header display_block opacity_0" label="blog"></app-section-header>
+
+  <div appDisplayMode="fadeInTop" fxLayout fxLayoutAlign="center" class="opacity_0">
+    <div fxFlex class="width_100 container-max-width"
+      [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <div class="carousel-container">
+        <carousel [configs]="carouselConfigs" fxFlexFill>
+          <app-blog-item *ngFor="let blog of blogs" [item]="blog" carouselItem>
+          </app-blog-item>
+        </carousel>
+      </div>
+    </div>
+  </div>
+</div>

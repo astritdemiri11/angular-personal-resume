@@ -1,0 +1,33 @@
+.social-media-button {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 50px;
+  height: 50px;
+  transition: border 300ms ease-in-out, padding-right 300ms ease-in-out, width 300ms ease-in-out;
+}
+
+.social-media-label {
+  max-width: 0;
+  transition: max-width 300ms ease-in-out;
+}
+
+.social-media-button:hover {
+  padding-right: 13px;
+  width: auto !important;
+}
+
+.social-media-button:hover .social-media-label {
+  max-width: 150px;
+}
+
+.social-media-icon {
+  min-width: 50px;
+  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  transition: opacity 300ms ease-in-out;
+}
+
+.social-media-button:hover .social-media-icon {
+  opacity: 1;
+}

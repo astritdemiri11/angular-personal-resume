@@ -1,0 +1,23 @@
+@use "@angular/material" as mat;
+
+@use "./palette/lightYellow" as palette-lightYellow;
+@use "./palette/purple" as palette-purple;
+
+$palette-lightYellow: mat.define-palette(
+  palette-lightYellow.$palette,
+  500,
+  300,
+  700
+);
+$palette-purple: mat.define-palette(palette-purple.$palette);
+$palette-red: mat.define-palette(mat.$red-palette);
+
+$theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $palette-lightYellow,
+      accent: $palette-purple,
+      warn: $palette-red,
+    )
+  )
+);

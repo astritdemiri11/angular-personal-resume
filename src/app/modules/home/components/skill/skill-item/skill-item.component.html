@@ -1,0 +1,25 @@
+<div fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="4px" class="skill">
+  <ng-container *ngIf="item">
+    <div fxFlex fxLayout fxLayoutAlign="space-between center">
+      <div fxFlex="1 1 90%">
+        <text-display fxFlexFill [text]="item.title" [ngClass]="{ 'blurIn': isLoaded, 'blurOut': isLoading }" class="product-title"
+        class="mat-subheading-2 margin_0 font-family_secondary">
+        </text-display>
+      </div>
+
+      <div fxFlex="1 1 10%" fxLayout fxLayoutAlign="end">
+        <div class="font-family_secondary theme-accent_color">
+          <p>{{ item.percentage }}%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-progress-container theme-primary_background_200 position_relative">
+      <div class="skill-progress" [style.width.%]="item.percentage">
+        <div appDisplayMode="width" class="position_relative width_0 height_100 theme-accent_background">
+          <div class="skill-progress-overlay position_absolute height_100 theme-primary_background_100"></div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

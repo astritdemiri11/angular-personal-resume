@@ -1,0 +1,36 @@
+{
+  "e": [
+    {
+      "id": 1,
+      "t": "Universität Tirana",
+      "u": "Mathematik & Technische Informatik - Wissenschaftlicher Master",
+      "d": "Eine Vertiefung des Bachelorstudiengangs Angewandte Mathematik. Ein Wissenszweig, der fortgeschrittene Informationen über Theorie, Experimente und Technik vermittelt, die die Grundlage für den Entwurf und die Verwendung von Computern bilden, kombiniert mit Kenntnissen über Differentialgleichungen, reelle und komplexe Analyse, Näherungstheorie sowie lineare Algebra und angewandte Wahrscheinlichkeit. Diese Kombination bietet eine großartige Erfahrung in Bereichen wie Mathematikunterricht, Statistik, Programmierung und Computerhardware."
+    },
+    {
+      "id": 2,
+      "t": "Universität Tirana",
+      "u": "Mathematik und Informatik",
+      "d": "Diese Studienrichtung ist Teil des Fachbereichs Angewandte Mathematik. Ein Wissenszweig, der fortgeschrittene Informationen über Theorie, Experimente und Technik vermittelt, die die Grundlage für den Entwurf und die Verwendung von Computern bilden, kombiniert mit Kenntnissen über Differentialgleichungen, reelle und komplexe Analyse, Näherungstheorie sowie lineare Algebra und angewandte Wahrscheinlichkeit. Diese Kombination bietet eine großartige Erfahrung in Bereichen wie Mathematikunterricht, Statistik, Programmierung und Computerhardware."
+    }
+  ],
+  "x": [
+    {
+      "id": 1,
+      "t": "Full-Stack-Entwickler",
+      "u": "BlackSoft",
+      "d": "Mitarbeiter im 1. Projekt des Unternehmens. Meine Hauptaufgabe besteht darin, eine Sportwettenanwendung mit den erforderlichen Funktionen und mehr zu erstellen. Ich bin dafür verantwortlich, den Quellcode auf einfachste Weise für mein Team zu pflegen, zu sichern und zu teilen. Ich bin auch verantwortlich für die Freigabe oder Veröffentlichung der Anwendung, die Überprüfung auf Netzwerküberlastung, Benutzerinjektionen und nutzlosen Datenverbrauch."
+    },
+    {
+      "id": 2,
+      "t": "Web-Entwickler",
+      "u": "Morix",
+      "d": "Ein Unternehmen, das 2012 als Softwareentwicklungsunternehmen gegründet wurde und sich auf die Entwicklung von High-Tech-Softwareanwendungen spezialisiert hat. Meine Hauptaufgaben bestehen darin, eine bestehende Anwendung zu erstellen, zu warten oder zu aktualisieren. Ich muss die zu Beginn des Tages gestellten Aufgaben erledigen und am Ende des Tages die Ergebnisse zusammenfassen. Ich konzentriere mich hauptsächlich auf die Anwendungsfunktionalität im Vergleich zu ihrem Aussehen. Außerdem bin ich verantwortlich für die Freigabe oder Veröffentlichung der Anwendung, die Überprüfung auf Netzwerküberlastung, Benutzerinjektionen und nutzlosen Datenverbrauch."
+    },
+    {
+      "id": 3,
+      "t": "Beobachter, Webentwickler",
+      "u": "EESTEC LC Tirana",
+      "d": "Electrical Engineering Students' European Association ist eine unpolitische, nichtstaatliche und gemeinnützige Organisation, die sich durch ihre Aktivitäten an Studenten von Universitäten, Instituten und technischen Schulen mit elektrischem Profil in Europa richtet und diese ausbildet. Let's Be Humans ist eine Initiative dieser Organisation. Meine Aufgabe ist es, die offizielle Website von Let's Be Human Albania zu erstellen und zu pflegen, auf der sich Benutzer anmelden, überprüfen und mit allem helfen können, was sie können, um den Menschen in Not zu helfen."
+    }
+  ]
+}

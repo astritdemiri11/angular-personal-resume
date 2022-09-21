@@ -1,0 +1,14 @@
+<ng-container *ngIf="item">
+  <a [href]="sanitizeLink()" target="_blank" [attr.aria-label]="item.title" color="primary"
+    class="social-media-button display_block overflow_hidden padding-right_0 border-solid_1 theme-primary_border_200">
+    <div fxLayout fxLayoutAlign="start">
+      <div fxLayout fxLayoutAlign="center center" class="social-media-icon opacity_0_65">
+        <mat-icon *ngIf="isBrowser()" [svgIcon]="item.icon"></mat-icon>
+      </div>
+
+      <div fxFlex fxLayout fxLayoutAlign="center center" class="social-media-label font-size_16p overflow_hidden">
+        <p>{{ item.title }}</p>
+      </div>
+    </div>
+  </a>
+</ng-container>

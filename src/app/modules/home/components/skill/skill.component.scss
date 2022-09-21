@@ -1,0 +1,19 @@
+.skill-item:nth-child(odd) app-skill-item {
+  margin-right: 16px;
+}
+
+.skill-item:nth-child(even) app-skill-item {
+  margin-left: 16px;
+}
+
+.handset .skill-item:nth-child(odd) app-skill-item {
+  margin-right: 0;
+}
+
+.handset .skill-item:nth-child(even) app-skill-item {
+  margin-left: 0;
+}
+
+.skill-item {
+  margin-bottom: 16px;
+}

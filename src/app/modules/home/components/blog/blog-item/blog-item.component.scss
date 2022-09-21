@@ -1,0 +1,19 @@
+.blog-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: background-size 300ms ease-in-out;
+}
+
+.blog-image:hover {
+  background-size: 110%;
+}
+
+.blog-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-description {
+  transition: color 300ms ease-in-out;
+}

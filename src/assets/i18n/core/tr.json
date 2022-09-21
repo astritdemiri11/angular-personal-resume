@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "about": "Hakkında",
+    "api": "API",
+    "blog": "Blog",
+    "contact": "Temas",
+    "docs": "Dokümanlar",
+    "home": "Ev",
+    "language": "Dil",
+    "portfolio": "Portfolyo",
+    "privacy": "Mahremiyet",
+    "resume": "Özgeçmiş",
+    "security": "Güvenlik",
+    "terms": "Şartlar",
+    "training": "Eğitim"
+  },
+  "message": {
+    "websiteDescription": "Bu web sitesi neden özel?"
+  },
+  "fullScreen": "Tam ekran",
+  "socialLink": "Sosyal link",
+  "theme": "Tema"
+}

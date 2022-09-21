@@ -1,0 +1,27 @@
+<div fxFlexFill fxLayout class="intro position_relative" serverSide ssStyle="zIndex: -1">
+  <div fxLayout fxLayoutAlign="center" class="position_absolute top_0 left_0 width_100 height_100 z-index_2">
+    <div fxFlex fxLayoutAlign="space-between center" class="width_100 container-max-width fadeInLeft"
+      [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <app-info [profile]="profile" class="display_block"></app-info>
+    </div>
+  </div>
+
+  <div [fxFlex]="calcInfoWidth()" class="position_relative">
+    <app-particles *serverSideRender="false" [options]="particleOptions" fxFlexFill
+      class="display_block position_absolute top_0 left_0 z-index_1">
+    </app-particles>
+
+    <div [fxFlex]="calcMediaWidth()" fxLayout fxLayoutAlign="space-between"
+      class="social-media position_absolute bottom_0 right_0 width_100 z-index_2 fadeInLeft">
+      <app-social-media [socialMediaItems]="socialMediaItems" fxFlexFill fxFlexAlign="end"
+        class="display_block margin-bottom_32p"></app-social-media>
+    </div>
+  </div>
+
+  <div *ngIf="!layoutService.business.isHandset()" [fxFlex]="calcImageWidth()" fxLayout
+    class="overflow_hidden position_absolute top_0 right_0 width_100 height_100 z-index_2">
+    <div fxFlexFill class="profile position_relative fadeInRight">
+      <img itemprop="image" alt="Profile" [src]="imgSrc" fxFlexFill />
+    </div>
+  </div>
+</div>

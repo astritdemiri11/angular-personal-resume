@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "p": "UI/UX Designer",
+    "d": "Ai gjithmonë mund ta përkthejë dizajnin tim në kod pa kërkuar që unë të bëj ndryshime. Ai ka një kuptim shumë të mahnitshëm të prototipit tim të dizajnit edhe kur unë nuk përfshij çdo detaj siç duhet, gjë që ndihmon projektin të zhvillohet më shpejt."
+  },
+  {
+    "id": 2,
+    "p": "Frontend Developer",
+    "d": "Ndan mendime dhe ide pozitive për çështjet dhe kjo i ndihmon të tjerët të kenë një këndvështrim pozitiv për punën e tyre."
+  },
+  {
+    "id": 3,
+    "p": "Backend Developer",
+    "d": "Zotëron aftësinë për të sfiduar problemet e zakonshme duke krijuar zgjidhje të reja dhe inovative."
+  },
+  {
+    "id": 4,
+    "p": "Database Master",
+    "d": "Ndihmon ekipin të qëndrojë i angazhuar dhe i fokusuar."
+  }
+]

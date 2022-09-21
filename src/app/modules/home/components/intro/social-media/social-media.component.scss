@@ -1,0 +1,14 @@
+.social-media-container {
+  height: 80px;
+  border-right: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: background-color 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.handset.social-media-container {
+  border-left: none;
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

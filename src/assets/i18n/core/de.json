@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "about": "Über",
+    "api": "API",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "docs": "Dokumente",
+    "home": "Heim",
+    "language": "Sprache",
+    "portfolio": "Portfolio",
+    "privacy": "Privatsphäre",
+    "resume": "Resümee",
+    "security": "Sicherheit",
+    "terms": "Bedingungen",
+    "training": "Ausbildung"
+  },
+  "message": {
+    "websiteDescription": "Warum ist diese Website besonders?"
+  },
+  "fullScreen": "Ganzer Bildschirm",
+  "socialLink": "Soziale Verbindung",
+  "theme": "Thema"
+}

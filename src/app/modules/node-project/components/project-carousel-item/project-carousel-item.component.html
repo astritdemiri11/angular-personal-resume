@@ -1,0 +1,38 @@
+<ng-container *ngIf="item">
+  <div fxFlexFill class="project-container position_relative">
+    <video #video class="project-image position_absolute top_0 left_0 width_100 height_100 z-index_1">
+      <source [src]="item.source + '#t=0.001'" type="video/mp4">
+      {{ item.subtitle }}
+    </video>
+    <div class="project-backdrop position_absolute top_0 left_0 width_100 height_100
+        theme-primary_background z-index_1 opacity_0">
+    </div>
+
+    <div fxFlexFill fxLayout>
+      <div fxFlex fxLayout fxLayoutAlign="center end"
+        class="project z-index_1 opacity_0 border-solid_1 theme-accent_border_200">
+        <div class="height_50 padding_8p">
+          <div fxFlexFill fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="16px">
+            <div fxLayout fxLayoutGap="8px" class="project-button">
+              <button (click)="onPlayToggle()" color="primary" mat-mini-fab aria-label="Play project">
+                <mat-icon *ngIf="!playing; else stopArrow">play_arrow</mat-icon>
+                <ng-template #stopArrow>
+                  <mat-icon>stop_arrow</mat-icon>
+                </ng-template>
+              </button>
+              <a [routerLink]="[item.link]" aria-label="Open project" mat-mini-fab>
+                <mat-icon>link</mat-icon>
+              </a>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="space-between center">
+              <div class="mat-subheading-2 margin_0 font-family_secondary opacity_0_65">
+                <p>{{ item.subtitle }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

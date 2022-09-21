@@ -1,0 +1,24 @@
+.sidenav-library {
+  width: 70%;
+}
+
+.library-list-btn {
+  z-index: 5;
+  bottom: 80px;
+  left: 16px;
+}
+
+.library-carousel-navigation {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.library-carousel-container {
+  height: 240px;
+}
+
+.library-carousel-mobile {
+  margin-top: 56px;
+  height: calc(100vh - 300px);
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.sidenav-blog {
+  width: 70%;
+}
+
+.blog-list-btn {
+  z-index: 5;
+  bottom: 80px;
+  left: 16px;
+}
+
+.blog-carousel-navigation {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.blog-carousel-container {
+  height: 300px;
+}
+
+.blog-carousel-mobile {
+  height: calc(100vh - 300px);
+  width: 100%;
+}

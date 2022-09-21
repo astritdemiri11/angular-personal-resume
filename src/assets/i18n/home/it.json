@@ -1,0 +1,46 @@
+{
+  "aboutMe": "Su di me",
+  "address": "Indirizzo",
+  "available": "Disponibile",
+  "birthday": "Compleanno",
+  "blog": "Blog",
+  "by": "Di",
+  "call": "Chiama",
+  "contactInfo": "Informazioni di Contatto",
+  "contactMe": "Contattami",
+  "downloadCV": "Scarica CV",
+  "education": "Educazione",
+  "email": "Email",
+  "experience": "Esperienza",
+  "freelance": "Freelance",
+  "hireMe": "Assumimi",
+  "language": "Lingua",
+  "mySkills": "Le mie abilità",
+  "phone": "Telefono",
+  "portfolio": "Portfolio",
+  "presentDay": "Attuale",
+  "resume": "Sommario",
+  "reviews": "Recensioni",
+  "sendMessage": "Invia Messaggio",
+  "services": "Servizi",
+  "yourEmail": "La tua Email",
+  "yourMessage": "Il tuo Messaggio",
+  "yourName": "Il tuo nome",
+  "yourSubject": "Il tuo argomento",
+  "greeting": {
+    "v1": "Ciao, Io sono",
+    "v2": "Ciao! Io sono",
+    "v3": "Di solo Ciao"
+  },
+  "formMessages": {
+    "required": "Questo campo è obbligatorio!",
+    "invalidEmail": "Non è un'e-mail valida!"
+  },
+  "description": {
+    "contactMe": "Alcuni moduli di contatto come raggiungermi.",
+    "visitMedia": "Visita il mio profilo social e connettiti."
+  },
+  "header": {
+    "skills": "Tutte le abilità che ho acquisito al lavoro, a scuola e nell'esplorazione."
+  }
+}

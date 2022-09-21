@@ -1,0 +1,50 @@
+mat-sidenav-container,
+mat-sidenav-content {
+  overflow: unset;
+}
+
+.divider {
+  height: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.sidenav-menu {
+  width: 200px;
+}
+
+.sidenav-settings {
+  width: 300px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  scroll-behavior: smooth;
+}
+
+.header-toolbar {
+  height: 80px;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.intro {
+  height: calc(100vh - 80px);
+}
+
+.logo {
+  width: 75px;
+  height: 50px;
+  font-size: 50px;
+}

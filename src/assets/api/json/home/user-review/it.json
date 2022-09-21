@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "f": "Reixhons Gjoni",
+    "p": "UI/UX Designer",
+    "i": "/assets/images/webp/user-review/reixhons-gjoni.webp",
+    "l": "",
+    "d": "Può sempre tradurre il mio progetto in codice senza che io debba apportare modifiche. Ha una comprensione incredibile del mio prototipo di design anche quando non includo ogni dettaglio come dovrei, il che aiuta il progetto a svilupparsi più velocemente."
+  },
+  {
+    "id": 2,
+    "f": "Evis Kraja",
+    "p": "Frontend Developer",
+    "i": "/assets/images/webp/user-review/evis-kraja.webp",
+    "l": "",
+    "d": "Condivide pensieri e idee positive sui problemi e questo aiuta gli altri ad avere una visione positiva del proprio lavoro."
+  },
+  {
+    "id": 3,
+    "f": "Redi Zogolli",
+    "p": "Backend Developer",
+    "i": "/assets/images/webp/user-review/redi-zogolli.webp",
+    "l": "",
+    "d": "Possiede la capacità di sfidare problemi comuni creando soluzioni nuove e innovative."
+  },
+  {
+    "id": 4,
+    "f": "Kevin Karafili",
+    "p": "Database Master",
+    "i": "/assets/images/webp/user-review/kevin-karafili.webp",
+    "l": "",
+    "d": "Aiuta il team a rimanere impegnato e concentrato."
+  }
+]

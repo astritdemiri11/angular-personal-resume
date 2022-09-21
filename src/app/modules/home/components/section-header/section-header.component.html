@@ -1,0 +1,17 @@
+<div fxLayout fxLayoutAlign="center" class="section-header position_relative">
+  <div class="position_absolute z-index_1">
+    <div fxLayout="column" fxLayoutAlign="start center" class="header-container">
+      <div class="header-label font-family_secondary text-transform_uppercase text-align_center theme-accent_color">
+        <p [translate]="label" translateFeature="home"></p>
+      </div>
+      <div class="header-underline theme-primary_background_200 position_relative">
+        <div class="header-border theme-accent_background"></div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!layoutService.business.isHandset()" class="font-family_secondary header-background position_absolute width_100 text-transform_uppercase text-align_center
+     font-weight_bold theme-primary_color_300">
+     <p [translate]="label" translateFeature="home"></p>
+  </div>
+</div>

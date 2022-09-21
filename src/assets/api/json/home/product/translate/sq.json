@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "t": "Zhvillimi i Frontend",
+    "d": "Zhvillimi i aplikacioneve me kornizat dhe bibliotekat e reja të frontendit si Angular, React, jQuery dhe klasikja Vanilla Js."
+  },
+  {
+    "id": 2,
+    "t": "Dizajn UI/UX",
+    "d": "Aplikacione moderne me dizajn të lehtë me ndihmën e Material Design dhe fuqisë së strukturimit HTML/Jade dhe stilimit CSS/SCSS/SASS."
+  },
+  {
+    "id": 3,
+    "t": "Struktura e projektit",
+    "d": "Strukturimi, sigurimi dhe mirëmbajtja e lehtë e projekteve midis ekipit me ndihmën e menaxhimit të shtetit, modelit MVC, API-ve të disponueshme dhe menaxhimit të kontrollit të burimit."
+  },
+  {
+    "id": 4,
+    "t": "Aplikacioni celular",
+    "d": "Konvertimi i aplikacioneve në ueb në Android, iOS dhe madje edhe aplikacionet e Platformës Universale të Windows me ndihmën e NativeScript."
+  },
+  {
+    "id": 5,
+    "t": "Dizajn responsiv",
+    "d": "Dizajnimi i parë i celularit bëhet lehtësisht me ndihmën e pyetjeve mediatike dhe paraqitjes së materialit dhe teknologjive më të reja si dizajni Flex dhe Grid."
+  },
+  {
+    "id": 6,
+    "t": "Redaktimi i videos",
+    "d": "Një aksesor i dobishëm për zhvillimin e uebit është aftësia ime për të paraqitur produktin duke krijuar dhe modifikuar video me ndihmën e Adobe Premiere Pro."
+  }
+]

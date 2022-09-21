@@ -1,0 +1,172 @@
+
+/*Flex*/
+[fxFlex] {
+  flex: 1 1 0%;
+  box-sizing: border-box;
+}
+
+[fxFlex="45"] {
+  flex: 1 1 45;
+  max-width: 45%;
+}
+
+[fxFlex="33.3333"] {
+  flex: 1 1 33.3333;
+  max-width: 33.3333%;
+}
+
+[fxFlexFill] {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+[fxLayout] {
+  display: flex !important;
+}
+//Direction
+[fxLayout], [fxLayout^="row"] {
+  flex-direction: row;
+}
+
+[fxLayout^="row-reverse"] {
+  flex-direction: row-reverse;
+}
+
+[fxLayout^="column"] {
+  flex-direction: column;
+}
+
+[fxLayout^="column-reverse"] {
+  flex-direction: column-reverse;
+}
+
+//Main axis
+[fxLayoutAlign="start"] {
+  justify-content: flex-start;
+}
+
+[fxLayoutAlign^="end"] {
+  justify-content: flex-end;
+}
+
+[fxLayoutAlign^="center"] {
+  justify-content: center;
+}
+
+[fxLayoutAlign^="space-between"] {
+  justify-content: space-between;
+}
+
+[fxLayoutAlign^="space-around"] {
+  justify-content: space-around;
+}
+
+[fxLayoutAlign^="space-evenly"] {
+  justify-content: space-evenly;
+}
+
+//Cross axis
+[fxLayoutAlign$=" stretch"] {
+  align-items: stretch;
+}
+
+[fxLayoutAlign$=" center"] {
+  align-items: center;
+}
+
+[fxLayoutAlign$=" end"] {
+  align-items: flex-end;
+}
+
+[fxLayoutAlign$=" start"] {
+  align-items: flex-start;
+}
+
+
+[fxLayout][fxLayoutGap="8px"] > :not(:last-child) {
+  margin: 0;
+  margin-right: 8px;
+}
+
+[fxLayout^="column"][fxLayoutGap="8px"] > :not(:last-child) {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+[fxLayout][fxLayoutGap="16px"] > :not(:last-child) {
+  margin: 0;
+  margin-right: 16px;
+}
+
+[fxLayout^="column"][fxLayoutGap="16px"] > :not(:last-child) {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+[fxLayout$=" nowrap"] {
+  flex-wrap: nowrap;
+}
+
+[fxLayout$=" wrap"] {
+  flex-wrap: wrap;
+}
+
+[fxLayout$=" wrap-reverse"]
+.flex-wrap-wrap_reverse {
+  flex-wrap: wrap-reverse;
+}
+
+//Flex item
+.align-self--default {
+  align-self: auto;
+}
+
+.align-self_stretch {
+  align-self: stretch;
+}
+
+.align-self_flex_start {
+  align-self: flex-start;
+}
+
+.align-self_flex_end {
+  align-self: flex-end;
+}
+
+.align-self_center {
+  align-self: center;
+}
+
+.flex--default {
+  flex: 0 1 auto;
+}
+
+.flex-basis--default {
+  flex-basis: auto;
+}
+
+.flex-basis_0 {
+  flex-basis: 0;
+}
+
+.flex-flow--default {
+  flex-flow: row nowrap;
+}
+
+.flex-grow--default {
+  flex-grow: 0;
+}
+
+.flex-grow_1 {
+  flex-grow: 1;
+}
+
+.flex-order--default {
+  order: 0;
+}
+
+.flex-shrink--default {
+  flex-shrink: 1;
+}

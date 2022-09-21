@@ -1,0 +1,19 @@
+<div fxLayout="column" fxLayoutGap="16px" class="padding-top_128p padding-bottom_32p"
+  [class.handset]="layoutService.business.isHandset()">
+  <app-section-header appDisplayMode="fadeInTop" label="aboutMe" class="display_block opacity_0"></app-section-header>
+
+  <div fxLayout fxLayoutAlign="center" appDisplayMode="fadeInTop" class="opacity_0">
+    <div fxFlex [fxLayout]="layoutService.business.isHandset() ? 'column' : 'row'" fxLayoutAlign="space-between"
+      class="width_100 container-max-width" fxLayoutGap="32px"
+      [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+      <div fxFlex>
+        <div class="about-me-img" #imgElement [style.height]="calcImageHeight(imgElement)" [style.backgroundImage]="imgSrc"></div>
+      </div>
+
+      <div fxFlex fxLayoutAlign="space-between center">
+        <app-profile fxFlexFill [profile]="profile" [contact]="contactService.model.contact$ | async"
+          class="display_block height_100"></app-profile>
+      </div>
+    </div>
+  </div>
+</div>

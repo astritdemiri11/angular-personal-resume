@@ -1,0 +1,30 @@
+.portfolio {
+  transition: opacity 300ms ease-in-out;
+}
+
+.portfolio-backdrop {
+  transition: opacity 300ms ease-in-out;
+}
+
+.portfolio-button {
+  margin-top: -20px;
+}
+
+.portfolio-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: background-size 300ms ease-in-out;
+}
+
+.portfolio-container:hover .portfolio-backdrop {
+  opacity: 0.65;
+}
+
+.portfolio-container:hover .portfolio {
+  opacity: 1;
+}
+
+.portfolio-container:hover .portfolio-image {
+  background-size: 110%;
+}

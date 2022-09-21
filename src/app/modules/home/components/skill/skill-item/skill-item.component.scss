@@ -1,0 +1,22 @@
+.skill-progress-container {
+  height: 2px;
+}
+
+.skill-progress {
+  position: absolute;
+  height: 2px;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: background-color 300ms ease-in-out;
+}
+
+.skill-progress-overlay {
+  width: 5%;
+  opacity: .4;
+  left: -5%;
+}
+
+.skill:hover .skill-progress-overlay {
+  animation: left 1s;
+}

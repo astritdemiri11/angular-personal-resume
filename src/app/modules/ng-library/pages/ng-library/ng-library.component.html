@@ -1,0 +1,52 @@
+<mat-sidenav-container [ngStyle] = "{ 'position' : sidenavLibrary.opened ? 'fixed' : 'relative'}">
+  <mat-sidenav #sidenavLibrary [attr.role]="getSidenavRole()" [mode]="getSidenavMode()" [opened]="isSidenavOpened()"
+    class="sidenav-library theme-primary_background">
+    <div *ngIf="layoutService.business.isHandset()" fxFlexFill class="padding-horizontal_16p">
+      <div fxFlex fxLayout="column" fxLayoutAlign="start start">
+        <carousel [configs]="carouselConfigs" class="library-carousel-mobile">
+          <div *ngFor="let library of libraries" class="padding_16p"
+            [class.theme-primary_background_200]="library.name === selectedLibraryName" carouselItem>
+            <div fxFlex #libraryContainer>
+              <app-library-carousel-item [style.width.px]="libraryContainer.clientWidth * 16 / 9" [item]="library">
+              </app-library-carousel-item>
+            </div>
+          </div>
+        </carousel>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div fxLayout="column" fxLayoutGap="16px" class="padding-top_32p padding-bottom_32p theme-primary_background"
+      [class.handset]="layoutService.business.isHandset()">
+
+      <div fxLayout fxLayoutAlign="center">
+        <div fxFlex class="width_100 container-max-width"
+          [class.padding-horizontal_16p]="!layoutService.business.isHandset()">
+          <div fxFlexFill>
+            <router-outlet></router-outlet>
+
+            <div *ngIf="!layoutService.business.isHandset()" class="library-carousel-container">
+              <carousel [configs]="carouselConfigs" fxFlexFill>
+                <div *ngFor="let library of libraries" class="padding_16p"
+                  [class.theme-primary_background_200]="library.name === selectedLibraryName" carouselItem>
+                  <div fxFlex #libraryContainer>
+                    <app-library-carousel-item [style.height.px]="libraryContainer.clientWidth * 9 / 16"
+                      [item]="library">
+                    </app-library-carousel-item>
+                  </div>
+                </div>
+              </carousel>
+            </div>
+
+            <div *ngIf="layoutService.business.isHandset()" class="library-list-btn position_fixed">
+              <button mat-mini-fab color="primary" (click)="sidenavLibrary.open()">
+                <mat-icon>list</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

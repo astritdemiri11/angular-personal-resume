@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "t": "Angular Kütüphane",
+    "i": "/assets/videos/mp4/portfolio/ngx-arrangement.mp4",
+    "l": "/ng-library/ngx-arrangement",
+    "d": 1,
+    "s": "ngx-arrangement",
+    "v": true
+  },
+  {
+    "id": 2,
+    "t": "Angular Kütüphane",
+    "i": "/assets/videos/mp4/portfolio/ngx-material-translate.mp4",
+    "l": "/ng-library/ngx-material-translate",
+    "d": 1,
+    "s": "ngx-material-translate",
+    "v": true
+  },
+  {
+    "id": 3,
+    "t": "Angular Kütüphane",
+    "i": "/assets/videos/mp4/portfolio/ngx-scroll-carousel.mp4",
+    "l": "/ng-library/ngx-scroll-carousel",
+    "d": 1,
+    "s": "ngx-scroll-carousel",
+    "v": true
+  },
+  {
+    "id": 4,
+    "t": "Angular Kütüphane",
+    "i": "/assets/videos/mp4/portfolio/ngx-text-animation.mp4",
+    "l": "/ng-library/ngx-text-animation",
+    "d": 1,
+    "s": "ngx-text-animation",
+    "v": true
+  },
+  {
+    "id": 5,
+    "t": "Node Proje",
+    "i": "/assets/videos/mp4/portfolio/node-chat.mp4",
+    "l": "/node-project/chat",
+    "d": 2,
+    "s": "Sohbet",
+    "v": true
+  },
+  {
+    "id": 6,
+    "t": "Node Proje",
+    "i": "/assets/videos/mp4/portfolio/node-weather.mp4",
+    "l": "/node-project/weather",
+    "d": 2,
+    "s": "Hava",
+    "v": true
+  }
+]

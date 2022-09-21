@@ -1,0 +1,29 @@
+{
+  "e": [{
+    "id": 1,
+    "t": "Tiran Üniversitesi",
+    "u": "Matematik ve Bilgisayar Mühendisliği - Bilimsel Yüksek Lisans",
+    "d": "Applied Math'da bir lisans derecesi avansı. Bilgisayarların tasarımı ve kullanımı için temel oluşturan teori, deney ve mühendislik hakkında ileri düzeyde bilgi veren, diferansiyel denklemler, gerçek ve karmaşık analiz yaklaşımı teorisi ve ayrıca lineer cebir ve uygulamalı olasılık bilgisi ile birlikte bilgi dalı. Bu kombinasyon Matematik Öğretimi, İstatistik, Programlama, Bilgisayar Donanımı gibi alanlarda harika bir deneyim sunar."
+  }, {
+    "id": 2,
+    "t": "Tiran Üniversitesi",
+    "u": "Matematik ve Bilgisayar Mühendisliği",
+    "d": "Bu çalışma alanı, Uygulamalı Matematik bölümünün bir parçasıdır. Bilgisayarların tasarımı ve kullanımı için temel oluşturan teori, deney ve mühendislik hakkında ileri düzeyde bilgi veren, diferansiyel denklemler, gerçek ve karmaşık analiz yaklaşımı teorisi ve ayrıca lineer cebir ve uygulamalı olasılık bilgisi ile birlikte bilgi dalı. Bu kombinasyon Matematik Öğretimi, İstatistik, Programlama, Bilgisayar Donanımı gibi alanlarda harika bir deneyim sunar."
+  }],
+  "x": [{
+    "id": 1,
+    "t": "Tam Yığın Geliştirici",
+    "u": "BlackSoft",
+    "d": "Şirketin 1. projesinde işbirlikçi. Ana sorumluluğum, gerekli özellikleri ve daha fazlasını içeren bir spor bahis uygulaması oluşturmaktır. Kaynak kodun bakımı, güvenliği ve ekibim için en kolay şekilde paylaşılmasından sorumluyum. Ayrıca uygulamayı yayınlamaktan veya yayınlamaktan, ağ aşırı yüklemesini, kullanıcı enjeksiyonlarını ve gereksiz veri tüketimini kontrol etmekten de sorumluyum."
+  }, {
+    "id": 2,
+    "t": "Web Geliştiricisi",
+    "u": "Morix",
+    "d": "2012 yılında yüksek teknolojili yazılım uygulama geliştirme konusunda uzmanlaşmış bir yazılım geliştirme şirketi olarak başlayan bir şirket. Ana sorumluluklarım, mevcut bir uygulamayı oluşturmak, sürdürmek veya güncellemektir. Günün başında verilen görevleri tamamlamalı ve günün sonunda sonuçları özetlemeliyim. Görünümüne kıyasla çoğunlukla uygulama işlevselliğine odaklandım. Ayrıca uygulamayı yayınlamaktan veya yayınlamaktan, ağ aşırı yüklemesini, kullanıcı enjeksiyonlarını ve gereksiz veri tüketimini kontrol etmekten de sorumluyum."
+  }, {
+    "id": 3,
+    "t": "Gözlemci, Web Geliştirici",
+    "u": "EESTEC LC Tirana",
+    "d": "Elektrik Mühendisliği Öğrencileri Avrupa Birliği, faaliyetleri aracılığıyla Avrupa'daki elektrik profilli Üniversiteler, Enstitüler ve Teknik Okullardan öğrencileri hedefleyen ve eğiten apolitik, sivil toplum ve kar amacı gütmeyen bir kuruluştur. İnsan Olalım, bu kuruluşun bir girişimidir. Benim sorumluluğum, kullanıcıların ihtiyacı olan insanlara yardım etmek için giriş yapabilecekleri, kontrol edebilecekleri ve ellerinden gelen her şeyi yapabilecekleri Let's Be Human Arnavutluk resmi web sitesini oluşturmak ve sürdürmek."
+  }]
+}
