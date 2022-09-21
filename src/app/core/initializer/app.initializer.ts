@@ -7,9 +7,15 @@ import localeTurkish from '@angular/common/locales/tr';
 import { Inject, Injectable } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer, makeStateKey, TransferState } from '@angular/platform-browser';
-import { LanguageDTO } from 'dist/ngx-material-translate/lib/models/language/language.interface';
 import { LayoutService } from 'ngx-arrangement';
-import { INTERNAL_FEATURE, KeyValue, LanguageCode, LanguageService, TranslateService } from 'ngx-material-translate';
+import {
+  INTERNAL_FEATURE,
+  KeyValue,
+  LanguageCode,
+  LanguageDTO,
+  LanguageService,
+  TranslateService,
+} from 'ngx-material-translate';
 
 import { COPYRIGHT_SVG } from '../constants/copyright.constant';
 import { LOGO_SVG } from '../constants/logo.constant';
