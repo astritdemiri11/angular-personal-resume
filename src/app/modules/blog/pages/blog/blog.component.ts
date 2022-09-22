@@ -85,20 +85,6 @@ export class BlogComponent implements OnInit, OnDestroy {
       };
     }));
 
-    if (this.activateRoute.firstChild) {
-      this.subscriptions.push(this.activateRoute.firstChild.params.subscribe(param => {
-        this.selectedBlogName = param['blog'];
-
-        if(this.sidenavBlog) {
-          this.sidenavBlog.close();
-        }
-
-        if(this.document.defaultView) {
-          this.document.defaultView.scrollTo({ top: 0 });
-        }
-      }));
-    }
-
     const serverUrl = REQUEST_URL.host;
     const feature = REQUEST_URL.json;
 
@@ -118,6 +104,24 @@ export class BlogComponent implements OnInit, OnDestroy {
         this.blogService.business.translateBlogs(`${serverUrl}/${feature.blog.translate}`);
       }
     }));
+
+    if (!this.layoutService.model.isBrowser) {
+      return;
+    }
+
+    if (this.activateRoute.firstChild) {
+      this.subscriptions.push(this.activateRoute.firstChild.params.subscribe(param => {
+        this.selectedBlogName = param['blog'];
+
+        if(this.sidenavBlog) {
+          this.sidenavBlog.close();
+        }
+
+        if(this.document.defaultView) {
+          this.document.defaultView.scrollTo({ top: 0 });
+        }
+      }));
+    }
   }
 
   ngOnDestroy() {

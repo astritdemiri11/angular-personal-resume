@@ -3,6 +3,11 @@ import 'zone.js/dist/zone-node';
 import { APP_BASE_HREF } from '@angular/common';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as bodyParser from 'body-parser';
+<<<<<<< HEAD
+=======
+import * as compression from 'compression';
+import * as cors from 'cors';
+>>>>>>> ba484cdc7142aafad0f1d86f8cd11a7ed610b2dc
 import * as express from 'express';
 import * as expressUserAgent from 'express-useragent';
 import * as fs from 'fs';
@@ -17,8 +22,13 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), 'dist/personal-resume/browser');
   const indexHtml = fs.existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
+<<<<<<< HEAD
   // server.use(cors({origin: "*" }));
+=======
+  server.use(cors({ origin: "*" }));
+>>>>>>> ba484cdc7142aafad0f1d86f8cd11a7ed610b2dc
   server.use(bodyParser.json());
+  server.use(compression());
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
   server.engine('html', (filePath: string, options: any, callback: any) => {
@@ -37,17 +47,17 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  server.get('/download-cv', (_req, res) => {
+    const cvFolder = join(process.cwd(), 'public/pdf');
+    res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
+  });
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
   }));
-
-  server.get('/download-cv', (_req, res) => {
-    const cvFolder = join(process.cwd(), 'public/pdf');
-    res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
-  });
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
@@ -58,7 +68,7 @@ export function app(): express.Express {
     let body = req.body;
     const transporter = nodemailer.createTransport({
       host: process.env["EMAIL_HOST"],
-      port:  Number(process.env["EMAIL_PORT"]),
+      port: Number(process.env["EMAIL_PORT"]),
       secure: true,
       auth: {
         user: process.env["EMAIL_AUTH_USER"],

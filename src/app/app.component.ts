@@ -3,7 +3,7 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { MatDrawerMode } from '@angular/material/sidenav';
 import { Meta } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { LayoutService } from 'ngx-arrangement';
 import { INTERNAL_FEATURE, LanguageService, TranslateService } from 'ngx-material-translate';
 import { Subscription, timer } from 'rxjs';
@@ -11,6 +11,8 @@ import { Subscription, timer } from 'rxjs';
 import { THEME_COLOR_MAP } from './core/constants/theme.constant';
 import { ThemeType } from './core/models/theme/theme.enum';
 import { SettingsService } from './core/services/settings/settings.service';
+
+declare const gtag: Function | null;
 
 @Component({
   selector: 'app-root',
@@ -57,9 +59,13 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   onLogoClick(event: MouseEvent) {
+    if (!this.layoutService.model.isBrowser) {
+      return;
+    }
+
     const path = this.router.url.split('?')[0].split('#')[0];
 
-    if(path !== '/') {
+    if (path !== '/') {
       this.router.navigate(['/'], { queryParamsHandling: 'merge', preserveFragment: true });
     } else if (this.document.defaultView) {
       this.document.defaultView.location.reload();
@@ -122,11 +128,23 @@ export class AppComponent implements OnInit, OnDestroy {
       if (handset) {
         this.renderer2.addClass(this.document.documentElement, 'handset');
         this.renderer2.addClass(overlayElement, 'handset');
+        this.meta.updateTag({ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' });
       } else {
         this.renderer2.removeClass(this.document.documentElement, 'handset');
         this.renderer2.removeClass(overlayElement, 'handset');
+        this.meta.updateTag({ name: 'viewport', content: 'width=device-width, initial-scale=1' });
       }
     }));
+
+    this.router.events.subscribe(event => {
+      if (this.layoutService.model.isBrowser) {
+        if (gtag && event instanceof NavigationEnd) {
+          gtag('event', 'page_view', {
+            page_path: event.url
+          });
+        }
+      }
+    })
   }
 
   ngOnDestroy() {

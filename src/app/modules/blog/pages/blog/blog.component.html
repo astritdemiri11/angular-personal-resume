@@ -31,7 +31,7 @@
             </div>
 
             <div *ngIf="layoutService.business.isHandset()" class="blog-list-btn position_fixed">
-              <button mat-mini-fab color="primary" (click)="sidenavBlog.toggle()">
+              <button mat-mini-fab aria-label="Open blogs sidenav" color="primary" (click)="sidenavBlog.toggle()">
                 <mat-icon>list</mat-icon>
               </button>
             </div>

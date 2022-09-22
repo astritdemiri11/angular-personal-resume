@@ -40,7 +40,7 @@
             </div>
 
             <div *ngIf="layoutService.business.isHandset()" class="library-list-btn position_fixed">
-              <button mat-mini-fab color="primary" (click)="sidenavLibrary.open()">
+              <button mat-mini-fab aria-label="Open libraries sidenav" color="primary" (click)="sidenavLibrary.open()">
                 <mat-icon>list</mat-icon>
               </button>
             </div>

@@ -26,6 +26,10 @@ export class HeaderComponent {
   }
 
   onLogoClick(event: MouseEvent) {
+    if (!this.layoutService.model.isBrowser) {
+      return;
+    }
+
     const path = this.router.url.split('?')[0].split('#')[0];
 
     if (path !== '/') {
