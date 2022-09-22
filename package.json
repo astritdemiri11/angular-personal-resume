@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node dist/personal-resume/server/main.js",
-    "build": "ng build --base-href ./ --aot --source-map true && ng run personal-resume:server",
+    "build": "ng build --base-href ./ --aot --source-map true && ng run personal-resume:server && gulp compress",
     "compress": "gulp compress",
     "sass": "gulp sass",
     "watch": "ng build --watch --configuration development",
