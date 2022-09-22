@@ -52,7 +52,7 @@
     "hammerjs": "^2.0.8",
     "ngx-arrangement": "^1.0.5",
     "ngx-material-translate": "^1.0.2",
-    "ngx-scroll-carousel": "^1.2.0",
+    "ngx-scroll-carousel": "^1.2.1",
     "ngx-text-animation": "^1.0.2",
     "nodemailer": "^6.7.8",
     "rxjs": "^7.5.6",

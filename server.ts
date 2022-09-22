@@ -40,20 +40,9 @@ export function app(): express.Express {
     maxAge: '1y'
   }));
 
-  server.get('/download-cv', (req, res) => {
+  server.get('/download-cv', (_req, res) => {
     const cvFolder = join(process.cwd(), 'public/pdf');
-
-    if (req.protocol === 'http') {
-      return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
-    }
-
-    var file = fs.createReadStream(cvFolder);
-    var stat = fs.statSync(cvFolder);
-    res.setHeader('Content-Length', stat.size);
-    res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename=cv-Astrit_Demiri.pdf');
-    file.pipe(res);
-    res.end();
+    return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
   });
 
   server.get('*', (req, res) => {
