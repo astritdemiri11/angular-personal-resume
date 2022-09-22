@@ -128,9 +128,11 @@ export class AppComponent implements OnInit, OnDestroy {
       if (handset) {
         this.renderer2.addClass(this.document.documentElement, 'handset');
         this.renderer2.addClass(overlayElement, 'handset');
+        this.meta.updateTag({ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' });
       } else {
         this.renderer2.removeClass(this.document.documentElement, 'handset');
         this.renderer2.removeClass(overlayElement, 'handset');
+        this.meta.updateTag({ name: 'viewport', content: 'width=device-width, initial-scale=1' });
       }
     }));
 

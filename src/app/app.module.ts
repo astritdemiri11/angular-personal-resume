@@ -25,7 +25,7 @@ import { metaReducers, reducers } from './state';
     StoreModule.forRoot(reducers, { metaReducers }),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: "registerImmediately"
     })
   ],
   bootstrap: [AppComponent]
