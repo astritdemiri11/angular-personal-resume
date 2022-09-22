@@ -3,7 +3,6 @@ import 'zone.js/dist/zone-node';
 import { APP_BASE_HREF } from '@angular/common';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as bodyParser from 'body-parser';
-import * as cors from 'cors';
 import * as express from 'express';
 import * as expressUserAgent from 'express-useragent';
 import * as fs from 'fs';
@@ -18,7 +17,7 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), 'dist/personal-resume/browser');
   const indexHtml = fs.existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
-  server.use(cors({origin: "*" }));
+  // server.use(cors({origin: "*" }));
   server.use(bodyParser.json());
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
