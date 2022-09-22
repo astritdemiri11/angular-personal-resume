@@ -19,9 +19,17 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), 'dist/personal-resume/browser');
   const indexHtml = fs.existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
-  server.use(cors({origin: "*" }));
+  server.use(cors({ origin: "*" }));
   server.use(bodyParser.json());
-  server.use(compression())
+  server.use(compression({
+    filter: (req, res) => {
+      if (req.headers['x-no-compression']) {
+        return false;
+      }
+
+      return compression.filter(req, res);
+    }
+  }));
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
   server.engine('html', (filePath: string, options: any, callback: any) => {
@@ -40,17 +48,17 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  server.get('/download-cv', (_req, res) => {
+    const cvFolder = join(process.cwd(), 'public/pdf');
+    res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
+  });
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
   }));
-
-  server.get('/download-cv', (_req, res) => {
-    const cvFolder = join(process.cwd(), 'public/pdf');
-    res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
-  });
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
@@ -61,7 +69,7 @@ export function app(): express.Express {
     let body = req.body;
     const transporter = nodemailer.createTransport({
       host: process.env["EMAIL_HOST"],
-      port:  Number(process.env["EMAIL_PORT"]),
+      port: Number(process.env["EMAIL_PORT"]),
       secure: true,
       auth: {
         user: process.env["EMAIL_AUTH_USER"],
