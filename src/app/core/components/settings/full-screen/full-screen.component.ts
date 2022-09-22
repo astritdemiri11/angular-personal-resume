@@ -31,6 +31,10 @@ export class FullScreenComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (!this.layoutService.model.isBrowser) {
+      return;
+    }
+
     if (this.document.defaultView && this.layoutService.model.isBrowser) {
       this.fullScreen = this.document.defaultView.innerHeight == screen.height;
 

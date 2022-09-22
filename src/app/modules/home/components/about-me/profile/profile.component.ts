@@ -5,6 +5,7 @@ import { LanguageInterface, LanguageService, ResponseType } from 'ngx-material-t
 import { TextReadComponent } from 'ngx-text-animation';
 import { filter, fromEvent, Subscription, take, timer } from 'rxjs';
 import { Required } from 'src/app/shared/decorators/required/required.decorator';
+import { environment } from 'src/environments/environment';
 
 import { Contact } from '../../../models/contact/contact.interface';
 import { Profile } from '../../../models/profile/profile.interface';
@@ -16,6 +17,7 @@ import { ProfileService } from '../../../services/profile/profile.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit, OnDestroy {
+  Environment = environment;
   @Input() @Required('app-profile') profile?: Profile | null;
   @Input() @Required('app-profile') contact?: Contact | null;
 
@@ -56,7 +58,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
       if (this.textRead && this.textRead.elementRef) {
         const elementTop = this.textRead.elementRef.nativeElement.getBoundingClientRect().top;
 
-        if (this.document.defaultView && elementTop <= this.document.defaultView.innerHeight) {
+        if (this.document.defaultView && !this.textRead.reading && elementTop <= this.document.defaultView.innerHeight) {
           this.textRead.start();
           scrollObserver.unsubscribe();
         }
@@ -94,6 +96,20 @@ export class ProfileComponent implements OnInit, OnDestroy {
         });
       }
     }));
+  }
+
+  ngAfterViewInit() {
+    if (!this.layoutService.model.isBrowser || !this.document.defaultView) {
+      return;
+    }
+
+    if (this.textRead && !this.textRead.reading && this.textRead.elementRef) {
+      const elementTop = this.textRead.elementRef.nativeElement.getBoundingClientRect().top;
+
+      if (elementTop <= this.document.defaultView.innerHeight) {
+        this.textRead.start();
+      }
+    }
   }
 
   ngOnDestroy() {

@@ -52,16 +52,18 @@ export class HeaderMenuOutletComponent implements OnInit, OnDestroy {
   }
 
   isActive(fragment: string) {
-    if (this.layoutService.model.isBrowser) {
-      const element = this.menuService.model.fragmentElem[fragment];
+    if (!this.layoutService.model.isBrowser) {
+      return false;
+    }
 
-      if (this.document.defaultView && element) {
-        const elementBounding = element.nativeElement.getBoundingClientRect();
+    const element = this.menuService.model.fragmentElem[fragment];
 
-        if (elementBounding.top <= this.document.defaultView.innerHeight / 2 &&
-          elementBounding.bottom > this.document.defaultView.innerHeight / 2) {
-          return true;
-        }
+    if (this.document.defaultView && element) {
+      const elementBounding = element.nativeElement.getBoundingClientRect();
+
+      if (elementBounding.top <= this.document.defaultView.innerHeight / 2 &&
+        elementBounding.bottom > this.document.defaultView.innerHeight / 2) {
+        return true;
       }
     }
 

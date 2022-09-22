@@ -84,20 +84,6 @@ export class NgLibraryComponent implements OnInit, OnDestroy {
       };
     }));
 
-    if (this.activateRoute.firstChild) {
-      this.subscriptions.push(this.activateRoute.firstChild.params.subscribe(param => {
-        this.selectedLibraryName = param['library'];
-
-        if (this.sidenavLibrary) {
-          this.sidenavLibrary.close();
-        }
-
-        if (this.document.defaultView) {
-          this.document.defaultView.scrollTo({ top: 0 });
-        }
-      }));
-    }
-
     const serverUrl = REQUEST_URL.host;
     const feature = REQUEST_URL.json;
 
@@ -116,6 +102,24 @@ export class NgLibraryComponent implements OnInit, OnDestroy {
         this.libraryService.business.translateLibraries(`${serverUrl}/${feature.library.translate}`);
       }
     }));
+
+    if (!this.layoutService.model.isBrowser) {
+      return;
+    }
+
+    if (this.activateRoute.firstChild) {
+      this.subscriptions.push(this.activateRoute.firstChild.params.subscribe(param => {
+        this.selectedLibraryName = param['library'];
+
+        if (this.sidenavLibrary) {
+          this.sidenavLibrary.close();
+        }
+
+        if (this.document.defaultView) {
+          this.document.defaultView.scrollTo({ top: 0 });
+        }
+      }));
+    }
   }
 
   ngOnDestroy() {
