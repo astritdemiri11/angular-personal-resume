@@ -8,6 +8,7 @@ import * as express from 'express';
 import * as expressUserAgent from 'express-useragent';
 import * as fs from 'fs';
 import * as nodemailer from 'nodemailer';
+import * as compression from 'compression';
 import { join } from 'path';
 
 import { AppServerModule } from './src/main.server';
@@ -20,6 +21,7 @@ export function app(): express.Express {
 
   server.use(cors({origin: "*" }));
   server.use(bodyParser.json());
+  server.use(compression())
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
   server.engine('html', (filePath: string, options: any, callback: any) => {
