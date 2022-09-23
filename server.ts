@@ -5,7 +5,6 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as bodyParser from 'body-parser';
 import * as compression from 'compression';
 import * as express from 'express';
-import * as expressSSl from 'express-sslify';
 import * as expressUserAgent from 'express-useragent';
 import * as fs from 'fs';
 import * as nodemailer from 'nodemailer';
@@ -21,9 +20,14 @@ export function app(): express.Express {
   server.use(bodyParser.json());
   server.use(compression());
 
-  if (process.env['NODE_ENV'] !== 'development') {
-    server.use(expressSSl.HTTPS());
-  }
+  server.use(function (request, response, next) {
+
+    if (process.env['NODE_ENV'] != 'development' && !request.secure) {
+      return response.redirect("https://" + request.headers.host + request.url);
+    }
+
+    next();
+  })
 
   server.engine('html', (filePath: string, options: any, callback: any) => {
     const source = options.req.headers['user-agent'];
