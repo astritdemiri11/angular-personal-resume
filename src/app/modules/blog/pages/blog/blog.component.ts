@@ -64,6 +64,7 @@ export class BlogComponent implements OnInit, OnDestroy {
 
     this.carouselConfigs = {
       items: 0,
+      itemsGapPX: 16,
       controlsActiveClass: 'theme-accent_background',
       controlsButtonClass: 'theme-primary_background_300',
       controlsOverClass: 'theme-accent_background_200',
