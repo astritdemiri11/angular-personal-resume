@@ -23,7 +23,11 @@ export function app(): express.Express {
 
   server.use(function (request, response, next) {
     if (process.env['NODE_ENV'] !== 'development' && !request.secure) {
-      return response.redirect("https://" + request.headers.host + request.url);
+      const host = request.get('host');
+
+      if(host && host.includes('astritdemiri')) {
+        return response.redirect("https://" + request.headers.host + request.url);
+      }
     }
 
     next();
