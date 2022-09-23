@@ -17,12 +17,12 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), 'dist/personal-resume/browser');
   const indexHtml = fs.existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
+  server.enable('trust proxy')
   server.use(bodyParser.json());
   server.use(compression());
 
   server.use(function (request, response, next) {
-
-    if (process.env['NODE_ENV'] === 'development' && !request.secure) {
+    if (process.env['NODE_ENV'] !== 'development' && !request.secure) {
       return response.redirect("https://" + request.headers.host + request.url);
     }
 
