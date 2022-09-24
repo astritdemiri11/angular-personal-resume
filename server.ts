@@ -25,7 +25,7 @@ export function app(): express.Express {
     if (process.env['NODE_ENV'] !== 'development' && !request.secure) {
       const host = request.get('host');
 
-      if(host && host.includes('astritdemiri.com')) {
+      if (host && host.toLowerCase().includes('astritdemiri.com')) {
         return response.redirect("https://" + request.headers.host + request.url);
       }
     }
@@ -54,16 +54,8 @@ export function app(): express.Express {
   }));
 
   server.get('/download-cv', (_req, res) => {
-    try {
-      const cvFolder = join(process.cwd(), 'public/pdf');
-      return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
-    } catch(ex) {
-      return res.json({ error: ex });
-    }
-  });
-
-  server.get('/req', (req, res) => {
-    return res.json(req.get('host'));
+    const cvFolder = join(process.cwd(), 'public/pdf');
+    return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
   });
 
   server.get('*', (req, res) => {
