@@ -63,7 +63,7 @@ export function app(): express.Express {
   });
 
   server.get('/req', (req, res) => {
-    return res.json(req);
+    return res.json(req.get('host'));
   });
 
   server.get('*', (req, res) => {

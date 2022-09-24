@@ -36,7 +36,7 @@
   },
   {
     "id": 8,
-    "t": "Backend server environment: NodeJs",
+    "t": "Backend server environment: Node.js",
     "p": 80
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "id": 10,
-    "t": "Backend framework: Node express",
+    "t": "Backend framework: Express.js",
     "p": 80
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "id": 12,
-    "t": "Post-relational Database: MongoDB/Firebase",
+    "t": "Post-relational Database: MongoDB/Firestore",
     "p": 80
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "id": 16,
-    "t": "Projectdeployment: Docker/Windows Server",
+    "t": "Project deployment: Docker/Windows Server",
     "p": 90
   },
   {
     "id": 17,
-    "t": "Project postdeployment: Speed/Security/Minimal traffic consumption",
+    "t": "Project post deployment: Speed/Security/Minimal traffic consumption",
     "p": 90
   },
   {
