@@ -17,7 +17,7 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), 'dist/personal-resume/browser');
   const indexHtml = fs.existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
-  server.enable('trust proxy')
+  server.enable('trust proxy');
   server.use(bodyParser.json());
   server.use(compression());
 
@@ -54,8 +54,12 @@ export function app(): express.Express {
   }));
 
   server.get('/download-cv', (_req, res) => {
-    const cvFolder = join(process.cwd(), 'public/pdf');
-    return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
+    try {
+      const cvFolder = join(process.cwd(), 'public/pdf');
+      return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
+    } catch(ex) {
+      return res.json({ error: ex });
+    }
   });
 
   server.get('*', (req, res) => {

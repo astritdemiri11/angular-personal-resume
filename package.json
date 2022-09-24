@@ -59,6 +59,7 @@
     "tslib": "^2.4.0",
     "tsparticles-engine": "^2.2.2",
     "tsparticles-slim": "^2.2.2",
+    "winston": "^3.8.2",
     "zone.js": "^0.11.7"
   },
   "devDependencies": {
