@@ -25,7 +25,7 @@ export function app(): express.Express {
     if (process.env['NODE_ENV'] !== 'development' && !request.secure) {
       const host = request.get('host');
 
-      if(host && host.includes('astritdemiri')) {
+      if(host && host.includes('astritdemiri.com')) {
         return response.redirect("https://" + request.headers.host + request.url);
       }
     }
@@ -60,6 +60,10 @@ export function app(): express.Express {
     } catch(ex) {
       return res.json({ error: ex });
     }
+  });
+
+  server.get('/req', (req, res) => {
+    return res.json(req);
   });
 
   server.get('*', (req, res) => {
