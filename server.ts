@@ -55,7 +55,7 @@ export function app(): express.Express {
 
   server.get('/download-cv', (_req, res) => {
     const cvFolder = join(process.cwd(), 'public/pdf');
-    return res.download(join(cvFolder, 'CV - Astrit Demiri.pdf'));
+    return res.download(join(cvFolder, 'Astrit Demiri (CV).pdf'));
   });
 
   server.get('*', (req, res) => {
