@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "t": "Styling: CSS3/SASS",
+    "t": "Styling: CSS3 (SASS)",
     "p": 90
   },
   {
     "id": 2,
-    "t": "Markup: HTML5/XML",
+    "t": "Markup: HTML5 (XML)",
     "p": 95
   },
   {
     "id": 3,
-    "t": "Frontend script: Javascript/Typescript",
+    "t": "Frontend script: Javascript (Typescript, Canvas, WebGL)",
     "p": 95
   },
   {
@@ -21,12 +21,12 @@
   },
   {
     "id": 5,
-    "t": "Frontend library: React",
-    "p": 70
+    "t": "Frontend library: React (Redux, Next.js)",
+    "p": 90
   },
   {
     "id": 6,
-    "t": "Frontend framework: AngularJs/Angular",
+    "t": "Frontend framework: Angular (RxJs, NgRx, Material)",
     "p": 95
   },
   {
@@ -36,47 +36,47 @@
   },
   {
     "id": 8,
-    "t": "Backend server environment: Node.js",
-    "p": 80
+    "t": "Backend server environment: Node.js (Socket, Kafka, ORM, ODM, Deno)",
+    "p": 95
   },
   {
     "id": 9,
-    "t": "Backend framework: .NET Framework / .NET Core / Entity Framework",
+    "t": "Backend framework: .NET (Entity Framework, WCF)",
     "p": 90
   },
   {
     "id": 10,
     "t": "Backend framework: Express.js",
-    "p": 80
+    "p": 95
   },
   {
     "id": 11,
     "t": "In-memory Database: Redis",
-    "p": 90
-  },
-  {
-    "id": 12,
-    "t": "Post-relational Database: MongoDB/Firestore",
     "p": 80
   },
   {
-    "id": 13,
-    "t": "Relational Database query: SQL/T-SQL",
-    "p": 75
-  },
-  {
-    "id": 14,
-    "t": "Source control: TFS/Git",
+    "id": 12,
+    "t": "Post-relational Database: MongoDB, DynamoDB, Firestore",
     "p": 90
   },
   {
+    "id": 13,
+    "t": "Relational Database query: SQL (MySQL, T-SQL)",
+    "p": 90
+  },
+  {
+    "id": 14,
+    "t": "Source control: Git (GitHub)",
+    "p": 95
+  },
+  {
     "id": 15,
-    "t": "APIs architecture: REST/SOAP/RPC/GraphQL",
+    "t": "APIs architecture: REST, SOAP, RPC, GraphQL",
     "p": 95
   },
   {
     "id": 16,
-    "t": "Project deployment: Docker/Windows Server",
+    "t": "Agile & CI/CD: Jest, Jira, GitHub, Slack, Jenkins, AWS, Docker, Kubernetes",
     "p": 90
   },
   {
