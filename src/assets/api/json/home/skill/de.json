@@ -46,7 +46,7 @@
   },
   {
     "id": 10,
-    "t": "Backend framework: Express.js",
+    "t": "Backend framework: Express.js + 3rd party middleware",
     "p": 95
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "id": 13,
-    "t": "Relational Database query: SQL (MySQL, T-SQL)",
+    "t": "Relational Database query: SQL (MySQL, MS-SQL)",
     "p": 90
   },
   {
