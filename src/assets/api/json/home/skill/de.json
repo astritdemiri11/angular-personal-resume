@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "t": "Styling: CSS3 (SASS)",
+    "t": "Styling: CSS3 (Flex, Grid, SASS)",
     "p": 90
   },
   {
@@ -16,76 +16,66 @@
   },
   {
     "id": 4,
-    "t": "Frontend library: jQuery",
-    "p": 90
-  },
-  {
-    "id": 5,
     "t": "Frontend library: React (Redux, Next.js)",
     "p": 90
   },
   {
-    "id": 6,
-    "t": "Frontend framework: Angular (RxJs, NgRx, Material)",
+    "id": 5,
+    "t": "Frontend framework: Angular (RxJs, NgRx, Material, Universal)",
     "p": 95
   },
   {
-    "id": 7,
+    "id": 6,
     "t": "Backend script: C#",
     "p": 95
   },
   {
-    "id": 8,
+    "id": 7,
     "t": "Backend server environment: Node.js (Socket, Kafka, ORM, ODM, Deno)",
     "p": 95
   },
   {
-    "id": 9,
+    "id": 8,
     "t": "Backend framework: .NET (Entity Framework, WCF)",
     "p": 90
   },
   {
-    "id": 10,
+    "id": 9,
     "t": "Backend framework: Express.js + 3rd party middleware",
     "p": 95
   },
   {
-    "id": 11,
+    "id": 10,
     "t": "In-memory Database: Redis",
     "p": 80
   },
   {
-    "id": 12,
+    "id": 11,
     "t": "Post-relational Database: MongoDB, DynamoDB, Firestore",
     "p": 90
   },
   {
-    "id": 13,
-    "t": "Relational Database query: SQL (MySQL, MS-SQL)",
+    "id": 12,
+    "t": "Relational Database query: SQL (MySQL, PostgreSQL, MS-SQL)",
     "p": 90
   },
   {
+    "id": 13,
+    "t": "Source control: TFS, Git",
+    "p": 95
+  },
+  {
     "id": 14,
-    "t": "Source control: Git (GitHub)",
+    "t": "APIs architecture: REST, GraphQL, SOAP, RPC",
     "p": 95
   },
   {
     "id": 15,
-    "t": "APIs architecture: REST, SOAP, RPC, GraphQL",
-    "p": 95
+    "t": "Agile & CI/CD: Jira, Slack, Jest, GitHub, Jenkins, AWS, Docker, Kubernetes",
+    "p": 90
   },
   {
     "id": 16,
-    "t": "Agile & CI/CD: Jest, Jira, GitHub, Slack, Jenkins, AWS, Docker, Kubernetes",
-    "p": 90
-  },
-  {
-    "id": 17,
-    "t": "Project post deployment: Speed/Security/Minimal traffic consumption",
-    "p": 90
-  },
-  {
-    "id": 18,
     "t": "Video editing: Adobe Premiere Pro",
     "p": 90
   }
