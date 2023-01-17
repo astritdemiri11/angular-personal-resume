@@ -35,7 +35,7 @@ const initialState: State = adapter.getInitialState({
 
 const blogReducer = createReducer(initialState,
   on(BlogActions.loadBlogs, (state: State, { languageCode }) => {
-    const copyState = { ...state, error: null };
+    const copyState: State = { ...state, error: null };
 
     copyState.status = { ...copyState.status };
     copyState.status[languageCode] = ResponseType.Loading;
@@ -43,7 +43,7 @@ const blogReducer = createReducer(initialState,
     return copyState;
   }),
   on(BlogActions.loadBlogsSuccess, (state: State, { languageCode, blogs }) => {
-    const copyState = adapter.setAll(blogs.map(blog => new BlogTranslation(languageCode, blog)), { ...state, error: null });
+    const copyState: State = adapter.setAll(blogs.map(blog => new BlogTranslation(languageCode, blog)), { ...state, error: null });
 
     copyState.status = { ...copyState.status };
     copyState.status[languageCode] = ResponseType.Success;
