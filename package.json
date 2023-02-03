@@ -10,6 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "http-server": "http-server -p 8080 --gzip -c-1 dist/personal-resume/browser",
+    "serve": "ng serve --host 127.0.0.1 --port 4200",
     "serveByIp": "ng serve --host 10.0.0.61 --port 4200",
     "serveByIp2": "ng serve --host 192.168.1.42 --port 4200",
     "serveAt4400": "ng serve --port 4400",

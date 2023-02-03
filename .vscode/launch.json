@@ -11,6 +11,13 @@
     {
       "type": "chrome",
       "request": "launch",
+      "name": "Chrome 127.0.0.1 debug",
+      "url": "http://127.0.0.1:4200",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
       "name": "Chrome 10.0.0.61 debug",
       "url": "http://10.0.0.61:4200",
       "webRoot": "${workspaceFolder}"
