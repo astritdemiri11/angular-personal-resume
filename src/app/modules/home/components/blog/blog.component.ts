@@ -41,7 +41,8 @@ export class BlogComponent {
       controlsOverClass: 'theme-accent_background_200',
       navigationIconClass: 'theme-accent_color',
       navigation: false,
-      speed: 3000
+      speed: 3000,
+      omitChanges: true
     };
 
     this.subscriptions.push(this.layoutService.model.handset$.subscribe(handset => {

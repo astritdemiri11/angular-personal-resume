@@ -38,7 +38,8 @@ export class UserReviewComponent implements OnInit {
       controlsButtonClass: 'theme-primary_background_300',
       controlsOverClass: 'theme-accent_background_200',
       navigation: false,
-      speed: 6000
+      speed: 6000,
+      omitChanges: true
     };
 
     this.subscriptions.push(this.layoutService.model.handset$.subscribe(handset => {
