@@ -20,26 +20,34 @@
   "x": [
     {
       "id": 1,
-      "t": "Tam Yığın Geliştirici",
-      "s": "2016-12-01T00:00:00.000Z",
-      "u": "B Service",
-      "d": "Şirketin 1. projesinde işbirlikçi. Ana sorumluluğum, gerekli özellikleri ve daha fazlasını içeren bir spor bahis uygulaması oluşturmaktır. Kaynak kodun bakımı, güvenliği ve ekibim için en kolay şekilde paylaşılmasından sorumluyum. Ayrıca uygulamayı yayınlamaktan veya yayınlamaktan, ağ aşırı yüklemesini, kullanıcı enjeksiyonlarını ve gereksiz veri tüketimini kontrol etmekten de sorumluyum."
+      "t": "Founder & CEO",
+      "s": "2023-02-01T00:00:00.000Z",
+      "u": "AD Software",
+      "d": "Providing Contractor/B2B services as Senior Software Engineer, TeamLeader/Scrum Master and DevOps"
     },
     {
       "id": 2,
-      "t": "Web Geliştiricisi",
-      "s": "2015-05-01T00:00:00.000Z",
-      "e": "2016-12-01T00:00:00.000Z",
-      "u": "Morix",
-      "d": "2012 yılında yüksek teknolojili yazılım uygulama geliştirme konusunda uzmanlaşmış bir yazılım geliştirme şirketi olarak başlayan bir şirket. Ana sorumluluklarım, mevcut bir uygulamayı oluşturmak, sürdürmek veya güncellemektir. Günün başında verilen görevleri tamamlamalı ve günün sonunda sonuçları özetlemeliyim. Görünümüne kıyasla çoğunlukla uygulama işlevselliğine odaklandım. Ayrıca uygulamayı yayınlamaktan veya yayınlamaktan, ağ aşırı yüklemesini, kullanıcı enjeksiyonlarını ve gereksiz veri tüketimini kontrol etmekten de sorumluyum."
+      "t": "Full Stack Developer",
+      "s": "2016-12-01T00:00:00.000Z",
+      "e": "2023-02-28T00:00:00.000Z",
+      "u": "B Service",
+      "d": "Developer, Team Leader/Scrum Master and DevOps of the company's main project. My main responsibility was to create and maintain a Sport Betting & iGaming software from scratch. I was also responsible for choosing the right tools, principles, patterns and frameworks in order to build the app. Team lead responsibilities includes maintaining, testing and sharing the source code between my teams using the agile methodology and source control versioning. I also participate in meetings with the clients so I can listen to their needs and give them my suggestions. My post development duties are releasing, monitoring, scalability and network management using AWS Cloud Platform."
     },
     {
       "id": 3,
-      "t": "Gözlemci, Web Geliştirici",
+      "t": "Web Developer",
+      "s": "2015-05-01T00:00:00.000Z",
+      "e": "2016-12-01T00:00:00.000Z",
+      "u": "Morix",
+      "d": "A company started in 2012 as a software development company specialized in high technology software application development. My main responsibilities are to create, maintain or update an existing application. I have to accomplish the tasks given at the start of the day and to summarize the results at the end of the day. I am mostly focused at the application functionality compared to it's appearance. Also I am responsible at releasing or publishing the application, checking for network overloading, users injections and useless data consumption."
+    },
+    {
+      "id": 4,
+      "t": "Observer, Web Developer",
       "s": "2014-11-01T00:00:00.000Z",
       "e": "2018-06-01T00:00:00.000Z",
       "u": "EESTEC LC Tirana",
-      "d": "Elektrik Mühendisliği Öğrencileri Avrupa Birliği, faaliyetleri aracılığıyla Avrupa'daki elektrik profilli Üniversiteler, Enstitüler ve Teknik Okullardan öğrencileri hedefleyen ve eğiten apolitik, sivil toplum ve kar amacı gütmeyen bir kuruluştur. İnsan Olalım, bu kuruluşun bir girişimidir. Benim sorumluluğum, kullanıcıların ihtiyacı olan insanlara yardım etmek için giriş yapabilecekleri, kontrol edebilecekleri ve ellerinden gelen her şeyi yapabilecekleri Let's Be Human Arnavutluk resmi web sitesini oluşturmak ve sürdürmek."
+      "d": "Electrical Engineering Students' European Association is an apolitical, non-governmental and non-profit organization which targets and trains through its activities students from electrical profile Universities, Institutes and Technical Schools in Europe.Let's Be Humans is an initiative of this organization. My responsibility is to create and maintain the Let's Be Human Albania official website where users will be able to login, check and help with everything they can in order to help the people in need."
     }
   ]
 }

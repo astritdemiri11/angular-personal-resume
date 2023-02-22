@@ -20,13 +20,21 @@
   "x": [
     {
       "id": 1,
+      "t": "Founder & CEO",
+      "s": "2023-02-01T00:00:00.000Z",
+      "u": "AD Software",
+      "d": "Providing Contractor/B2B services as Senior Software Engineer, TeamLeader/Scrum Master and DevOps"
+    },
+    {
+      "id": 2,
       "t": "Full Stack Developer",
       "s": "2016-12-01T00:00:00.000Z",
+      "e": "2023-02-28T00:00:00.000Z",
       "u": "B Service",
       "d": "Developer, Team Leader/Scrum Master and DevOps of the company's main project. My main responsibility was to create and maintain a Sport Betting & iGaming software from scratch. I was also responsible for choosing the right tools, principles, patterns and frameworks in order to build the app. Team lead responsibilities includes maintaining, testing and sharing the source code between my teams using the agile methodology and source control versioning. I also participate in meetings with the clients so I can listen to their needs and give them my suggestions. My post development duties are releasing, monitoring, scalability and network management using AWS Cloud Platform."
     },
     {
-      "id": 2,
+      "id": 3,
       "t": "Web Developer",
       "s": "2015-05-01T00:00:00.000Z",
       "e": "2016-12-01T00:00:00.000Z",
@@ -34,7 +42,7 @@
       "d": "A company started in 2012 as a software development company specialized in high technology software application development. My main responsibilities are to create, maintain or update an existing application. I have to accomplish the tasks given at the start of the day and to summarize the results at the end of the day. I am mostly focused at the application functionality compared to it's appearance. Also I am responsible at releasing or publishing the application, checking for network overloading, users injections and useless data consumption."
     },
     {
-      "id": 3,
+      "id": 4,
       "t": "Observer, Web Developer",
       "s": "2014-11-01T00:00:00.000Z",
       "e": "2018-06-01T00:00:00.000Z",

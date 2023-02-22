@@ -20,26 +20,34 @@
   "x": [
     {
       "id": 1,
-      "t": "Sviluppatore a stack completo",
-      "s": "2016-12-01T00:00:00.000Z",
-      "u": "B Service",
-      "d": "Collaboratore nel 1° progetto dell'azienda. La mia principale responsabilità è creare un'applicazione di scommesse sportive che includa le funzionalità necessarie e altro ancora. Sono responsabile della manutenzione, della protezione e della condivisione del codice sorgente nel modo più semplice per il mio team. Sono anche responsabile del rilascio o della pubblicazione dell'applicazione, del controllo del sovraccarico della rete, delle iniezioni degli utenti e del consumo di dati inutili."
+      "t": "Founder & CEO",
+      "s": "2023-02-01T00:00:00.000Z",
+      "u": "AD Software",
+      "d": "Providing Contractor/B2B services as Senior Software Engineer, TeamLeader/Scrum Master and DevOps"
     },
     {
       "id": 2,
-      "t": "Sviluppatore web",
-      "s": "2015-05-01T00:00:00.000Z",
-      "e": "2016-12-01T00:00:00.000Z",
-      "u": "Morix",
-      "d": "Una società nata nel 2012 come società di sviluppo software specializzata nello sviluppo di applicazioni software ad alta tecnologia. Le mie principali responsabilità sono creare, mantenere o aggiornare un'applicazione esistente. Devo portare a termine i compiti assegnati all'inizio della giornata e riassumere i risultati alla fine della giornata. Sono principalmente concentrato sulla funzionalità dell'applicazione rispetto al suo aspetto. Inoltre sono responsabile del rilascio o della pubblicazione dell'applicazione, del controllo del sovraccarico della rete, delle iniezioni degli utenti e del consumo di dati inutili."
+      "t": "Full Stack Developer",
+      "s": "2016-12-01T00:00:00.000Z",
+      "e": "2023-02-28T00:00:00.000Z",
+      "u": "B Service",
+      "d": "Developer, Team Leader/Scrum Master and DevOps of the company's main project. My main responsibility was to create and maintain a Sport Betting & iGaming software from scratch. I was also responsible for choosing the right tools, principles, patterns and frameworks in order to build the app. Team lead responsibilities includes maintaining, testing and sharing the source code between my teams using the agile methodology and source control versioning. I also participate in meetings with the clients so I can listen to their needs and give them my suggestions. My post development duties are releasing, monitoring, scalability and network management using AWS Cloud Platform."
     },
     {
       "id": 3,
-      "t": "Osservatore, sviluppatore web",
+      "t": "Web Developer",
+      "s": "2015-05-01T00:00:00.000Z",
+      "e": "2016-12-01T00:00:00.000Z",
+      "u": "Morix",
+      "d": "A company started in 2012 as a software development company specialized in high technology software application development. My main responsibilities are to create, maintain or update an existing application. I have to accomplish the tasks given at the start of the day and to summarize the results at the end of the day. I am mostly focused at the application functionality compared to it's appearance. Also I am responsible at releasing or publishing the application, checking for network overloading, users injections and useless data consumption."
+    },
+    {
+      "id": 4,
+      "t": "Observer, Web Developer",
       "s": "2014-11-01T00:00:00.000Z",
       "e": "2018-06-01T00:00:00.000Z",
       "u": "EESTEC LC Tirana",
-      "d": "L'Associazione Europea degli Studenti di Ingegneria Elettrica è un'organizzazione apolitica, non governativa e senza scopo di lucro che si rivolge e forma attraverso le sue attività studenti provenienti da Università, Istituti e Scuole Tecniche di profilo elettrico in Europa.Let's Be Humans è un'iniziativa di questa organizzazione. La mia responsabilità è creare e mantenere il sito Web ufficiale di Let's Be Human Albania dove gli utenti potranno accedere, controllare e aiutare con tutto ciò che possono per aiutare le persone bisognose."
+      "d": "Electrical Engineering Students' European Association is an apolitical, non-governmental and non-profit organization which targets and trains through its activities students from electrical profile Universities, Institutes and Technical Schools in Europe.Let's Be Humans is an initiative of this organization. My responsibility is to create and maintain the Let's Be Human Albania official website where users will be able to login, check and help with everything they can in order to help the people in need."
     }
   ]
 }
