@@ -1,7 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
-import { LanguageService } from 'ngx-material-translate';
-import { LanguageCode } from 'projects/ngx-material-translate/src/public-api';
+import { LanguageCode, LanguageService } from 'ngx-material-translate';
 
 @Pipe({
   name: 'customDate',
